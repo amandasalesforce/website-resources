@@ -1,0 +1,94 @@
+/* FOOTER -------------------------- FOOTER -------------------------- FOOTER */ 
+    
+/* ------------- Need Help Button ------------- */
+    .need-help-wrapper {
+        width: 140px;
+        gap: 8px;
+        padding: 4px 6px;
+        border-radius: 8px;
+        display: flex;
+        flex-direction: row;
+        -webkit-box-align: center;
+        align-items: center;
+        -webkit-box-pack: center;
+        justify-content: center;
+        background-color: transparent;
+        cursor: pointer;
+        transition: background-color 0.2s;
+    }
+
+    .need-help-text {
+        font-size: 16px;
+        font-weight: 500;
+    }
+
+    .need-help-icon-wrapper {
+        color: #fff;
+        flex-shrink: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 100%;
+        position: relative;
+        width: 32px;
+        height: 32px;
+        background: #217c7c;
+    }
+
+    .need-help-icon {
+        display: flex;
+        -webkit-box-align: center;
+        align-items: center;
+        -webkit-box-pack: center;
+        justify-content: center;
+        transition: opacity 0.2s;
+        opacity: 1;
+        font-size: 14px;
+        margin-top: 2px;
+    }
+    
+    /* Hover */
+    .need-help-icon-hover {
+        position: absolute;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        transition: opacity .2s ease, transform .2s ease;
+        opacity: 0;
+        font-size: 14px;
+    }
+    
+    .need-help-wrapper:hover {
+        background-color: rgb(238, 242, 246)
+    }
+
+    .need-help-wrapper:hover .need-help-icon {
+		opacity: 0;
+    }
+
+    .need-help-wrapper:hover .need-help-icon-hover {
+    	opacity: 1;
+    }
+    
+/* ------------- Back to Top Button ------------- */
+    .back-to-top {
+        position: fixed;
+        bottom: 40px; /* Adjust as needed */
+        right: 30px; /* Adjust as needed */
+        background-color: #217c7c;
+        color: #ffffff;
+        padding: 10px 15px;
+        border-radius: 50px;
+        font-size: 14px;
+        font-weight: bold;
+        text-align: center;
+        cursor: pointer;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        display: none; /* Initially hidden */
+        z-index: 1000;
+        transition: all 0.3s ease;
+    }
+
+    .back-to-top:hover {
+        background-color: #005fb2; /* Darker blue on hover */
+    }
