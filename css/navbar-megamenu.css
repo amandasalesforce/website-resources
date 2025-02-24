@@ -344,8 +344,8 @@ transition: transform 0.2s ease-in-out;
 
 /* Default Link Styles */
 .dropdown-links a, .dropdown-links-supplies a {
-    text-decoration: none;
-    color: #000;
+    text-decoration: none!important;
+    color: #000!important;
     line-height: 1;
 }
 
