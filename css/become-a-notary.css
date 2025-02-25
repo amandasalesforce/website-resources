@@ -2,10 +2,6 @@
 /* -------------------------- BECOME A NOTARY PAGE ------------------------ */
 /* ======================================================================== */
 
-.st0 {
-	fill: red;
-}
-
 .banner-image-become {
         background-image: url('https://raw.githubusercontent.com/amandasalesforce/website-resources/refs/heads/main/images/illinois-outline.svg');
         background-size: contain; /* Adjusts image to cover the entire container */
