@@ -3,14 +3,14 @@
 /* ======================================================================= */    
  
 /* ------------- Header Bar ------------- */
-	.header-bar > * {
+.header-bar > * {
     	flex: 1;
     	min-width: 0;
     	white-space: nowrap; /* Prevents text from wrapping */
     	overflow: hidden; /* Ensures content doesn’t over */
-	}
+}
     
-    dxp_layout-columns.dxpBrand_56fc3d6a-cab1-47f9-ae2a-f8aefa47a02d.dxpStyle_60bcfdd4-99f9-4875-8640-f1bd579b43be.header-bar.lwc-bh41l7ugn9-host {
+dxp_layout-columns.dxpBrand_56fc3d6a-cab1-47f9-ae2a-f8aefa47a02d.dxpStyle_60bcfdd4-99f9-4875-8640-f1bd579b43be.header-bar.lwc-bh41l7ugn9-host {
     	display: flex;
     	align-items: center;
     	justify-content: space-between;
@@ -21,87 +21,98 @@
     	z-index: 99999;
     	transition: background-color 0.3s ease, box-shadow 0.3s ease;
         flex-wrap: nowrap;
-	}
+}
     
-    /* Bottom Border */
-    .lwc-4g1q55crn48-host .header.lwc-4g1q55crn48 {
+/* Bottom Border */
+.lwc-4g1q55crn48-host .header.lwc-4g1q55crn48 {
         border-bottom: none!important;
-    }
+}
     
-    /* Header Height: Do Not Remove- it will add space */
-    .lwc-4g1q55crn48-host .header:not(:has(header)).lwc-4g1q55crn48 {
+/* Header Height: Do Not Remove- it will add space */
+.lwc-4g1q55crn48-host .header:not(:has(header)).lwc-4g1q55crn48 {
         min-height: auto !important;
-    }
+}
 
-    /* Header Logo */
-    .header-logo img.lwc-692s6j89ul6 {
+/* Header Logo */
+.header-logo img.lwc-692s6j89ul6 {
     	height: 70px !important; /* Keep logo height fixed */
     	width: auto !important; /* Maintain aspect ratio */
     	max-width: 100% !important; /* Prevent stretching */
     	min-width: 120px !important; /* Prevent shrinking too small */
     	object-fit: contain !important;
         object-position: left;
-    }
+}
 
-	/* Navigation Column: Ensures it takes the most space */
-	commerce_builder-drilldown-navigation.header-nav {
+/* Navigation Column: Ensures it takes the most space */
+commerce_builder-drilldown-navigation.header-nav {
     	flex: 2; /* Allows the nav to take up remaining space */
     	display: flex;
     	justify-content: center;
     	min-width: 500px;
     	text-align: center;
-	}
+}
     
-    /* Right-Side Column (Cart, Help, Profile) */
-	.header-bar-column3 {
+/* Right-Side Column (Cart, Help, Profile) */
+.header-bar-column3 {
     	flex: 0 1 auto; /* Allows shrinking but prevents it from collapsing */
     	display: flex!important;
     	justify-content: flex-end;
     	align-items: center;
     	gap: 15px;
-	}
+}
     
-    /* Cart */
+/* Cart */
     
-    /* Divider */
-    .header-bar-divider {
+/* Divider */
+.header-bar-divider {
         background-color: #e3e8ef;
         width: 1px;
         height: 16px;
         margin: auto 24px auto 12px;
-    }
+}
 
-    /* ------------- Login Button ------------- */
-    commerce_builder-user-profile-menu.prof-icon {
-        display: flex;
-        align-items: center;
-        justify-content: flex-end;
-    }
+/* ------------- Login Button ------------- */
+commerce_builder-user-profile-menu.prof-icon {
+	display: flex;
+	align-items: center;
+	justify-content: flex-end;
+}
     
-    .prof-icon p.slds-truncate.login-text.lwc-5uc1gleli5 {
+.prof-icon p.slds-truncate.login-text.lwc-5uc1gleli5 {
         border: 1px solid #121926;
         padding: 14px 20px;
         border-radius: 1000px;
         color: #121926;
         font-size: 16px;
-    }
+}
     
-    .prof-icon .slds-icon_small {
-        display: none;
-    }
+.prof-icon .slds-icon_small {
+	display: none;
+}
     
-    .prof-icon .guest-login-max-width.lwc-5uc1gleli5 {
-        max-width: 100px !important;
-    }
+.prof-icon .guest-login-max-width.lwc-5uc1gleli5 {
+	max-width: 100px !important;
+}
+
+.prof-icon a.lwc-5uc1gleli5.login-link {
+	text-decoration: none;
+}
+
+.prof-icon p.slds-truncate.login-text.lwc-5uc1gleli5:hover {
+    background: #217c7c;
+    border: 1px solid #217c7c;
+    text-decoration: none;
+    color: white;
+}
 
 /* ------------- Profile Button ------------- */
-    commerce_builder-user-profile-menu.logged-in-prof-icon {
+commerce_builder-user-profile-menu.logged-in-prof-icon {
     	display: flex;
         align-items: center;
     	justify-content: flex-end;
-	}
-    
-    .logged-in-prof-icon .menu-button.lwc-5uc1gleli5 {
+}
+
+.logged-in-prof-icon .menu-button.lwc-5uc1gleli5 {
         background-color: #217c7c !important;
         border-radius: 9999px;
         border: none;
@@ -111,9 +122,9 @@
         display: flex;
         justify-content: center;
         align-items: center;
-	}
+}
 
-    .logged-in-prof-icon lightning-icon.lwc-5uc1gleli5.icon-color.slds-icon-text-default.slds-icon_container {
+.logged-in-prof-icon lightning-icon.lwc-5uc1gleli5.icon-color.slds-icon-text-default.slds-icon_container {
         display: flex;
         background: #ffffff;
         height: 30px;
@@ -122,15 +133,15 @@
         justify-content: center;
         align-content: center;
         flex-wrap: wrap;
-    }
-    
-    .logged-in-prof-icon svg.slds-icon.slds-icon_small {
+}
+
+.logged-in-prof-icon svg.slds-icon.slds-icon_small {
     	fill: #217c7c;
         width: 18px; 
 	}
     
-    .logged-in-prof-icon span.lwc-5uc1gleli5.menu-trigger-p.slds-text-align_right.slds-truncate.slds-m-top_xx-small {
+.logged-in-prof-icon span.lwc-5uc1gleli5.menu-trigger-p.slds-text-align_right.slds-truncate.slds-m-top_xx-small {
         margin-top: 0px;
         font-size: 14px;
         color: #fff;
-    }
+}
