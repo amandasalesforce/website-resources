@@ -60,6 +60,7 @@
         align-items: flex-start;
         gap: .25rem;
         font-size: 18px;
+	font-weight: 400;
 }
 
 /* ====================================================== */    
