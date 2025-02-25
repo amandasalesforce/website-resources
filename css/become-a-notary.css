@@ -16,28 +16,29 @@
 
 /* ------------- Sticky Menu ------------- */
 .sticky-menuWrapper {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    margin: 0 auto;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+	margin: 0 auto;
 }
 
 #sticky-menuLink {
-    text-decoration: none !important;
+    	text-decoration: none !important;
 }
 
 .sticky-menuButton:hover, .sticky-menuButton:active {
-    background: #333;
-    color: #fff;
-    text-decoration: none;
+	background: #333;
+	color: #fff;
+	text-decoration: none;
 }
 .sticky-menuButton {
-    display: block;
-    background: #fff;
-    padding: 10px 12px;
-    border-radius: 8px;
-    color: #333;
+    	display: block;
+    	background: #fff;
+    	padding: 10px 12px;
+    	border-radius: 8px;
+    	color: #333;
+	width: 166px;
 }
 
 /* ------------- Traditional - Banner ------------- */
