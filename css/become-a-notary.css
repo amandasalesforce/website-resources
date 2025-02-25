@@ -54,6 +54,10 @@
         font-size: 18px;
 }
 
+.banner-section-pill-icon i.fa-solid {
+    font-size: 1.125rem !important;
+}
+
 .banner-section-pill-text {
         display: flex;
         flex-direction: column;
