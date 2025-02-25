@@ -277,22 +277,21 @@ transition: transform 0.2s ease-in-out;
 
 /* Dropdown Button */
 .dropdown-button {
-    background-color: #217c7c;
+    background-color: #217c7c!important;
     border: none;
-    padding: 20px 32px;
     border-radius: 999px;
     font-weight: 500;
-    color: #fff;
+    color: #fff!important;
     font-size: 14px;
     cursor: pointer;
-    transition: background-color .3sease, color .3sease;
+    transition: background-color .3sease, color .3sease!important;
     line-height: 1;
     display: flex;
     align-items: center;
     justify-content: center;
     gap: 8px;
-    padding: 12px 20px;
-    text-decoration: none;
+    padding: 12px 20px!important;
+    text-decoration: none!important;
     font-family: Xfinity Standard;
 }
 
