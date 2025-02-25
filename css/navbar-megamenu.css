@@ -278,7 +278,7 @@ transition: transform 0.2s ease-in-out;
 /* Dropdown Button */
 .dropdown-button {
     background-color: #217c7c!important;
-    border: none;
+    border: 1px solid #217c7c;
     border-radius: 999px;
     font-weight: 500;
     color: #fff!important;
@@ -293,6 +293,11 @@ transition: transform 0.2s ease-in-out;
     padding: 12px 20px!important;
     text-decoration: none!important;
     font-family: Xfinity Standard;
+}
+
+.dropdown-button:hover {
+    background: #fff;
+    color: #217c7c;
 }
 
 /* Dropdown Links */
