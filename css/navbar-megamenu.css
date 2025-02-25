@@ -261,9 +261,9 @@ transition: transform 0.2s ease-in-out;
     
 }
 
-.dropdown-icon_Blue {
-    color: #38a5c8;
-    background-color: #e9f6fb; 
+.dropdown-icon_Green {
+    color: #30856d;
+    background-color: #e9f7ee;
 }
 
 .dropdown-icon_Purple {
@@ -313,8 +313,8 @@ transition: transform 0.2s ease-in-out;
     position: relative;
 }
 
-.dropdown-blueBox {
-    background-color: #e9f6fb;  
+.dropdown-greenBox {
+    background-color: #e9f7ee;  
 }
 
 .dropdown-purpleBox {
@@ -384,8 +384,8 @@ transition: transform 0.2s ease-in-out;
     border-radius: 8px;
 }
 
-.dropdown-blueBox .link-wrapper:hover {
-    background-color: #d4eff8;
+.dropdown-greenBox .link-wrapper:hover {
+    background-color: #cbead9;
 }
 
 .dropdown-purpleBox .link-wrapper:hover {
