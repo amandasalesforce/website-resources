@@ -3,7 +3,7 @@
 /* ======================================================================== */
 
 .banner-image-become {
-        background-image: url('https://raw.githubusercontent.com/amandasalesforce/website-resources/main/image/Illinois%20Outline.svg');
+        background-image: url('https://raw.githubusercontent.com/amandasalesforce/website-resources/refs/heads/main/images/illinois-outline.svg');
         background-size: contain; /* Adjusts image to cover the entire container */
         background-position: bottom; /* Centers the image */
         background-repeat: no-repeat; /* Prevents the image from repeating */
