@@ -7,6 +7,8 @@
         background-size: contain; /* Adjusts image to cover the entire container */
         background-position: center right; /* Centers the image */
         background-repeat: no-repeat; /* Prevents the image from repeating */
+	margin-top: 20px;
+    	margin-bottom: 20px;
 }
 
 /* ------------- Traditional - Banner ------------- */
