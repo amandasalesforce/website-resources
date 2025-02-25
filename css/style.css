@@ -3,16 +3,17 @@
 /* ======================================================================== */
     
 /* ------------- HERO BUTTON ------------- */
-    /* Hero Button Container */
-    .HeroSection_buttonWrapper {
+
+/* Hero Button Container */
+.HeroSection_buttonWrapper {
     	margin-top: 48px;
     	display: flex;
     	flex-direction: column;
     	align-items: flex-start;
-	}
+}
     
-    /* Hero Button Styling */
-    .HeroSection_button {
+/* Hero Button Styling */
+.HeroSection_button {
         background-color: #217c7c!important;
     	border: none;
     	font-weight: 700;
@@ -23,22 +24,22 @@
     	display: flex;
     	align-items: center;
     	justify-content: center;
-    }
+}
     
-    /* Hero Button Hover */
-	.HeroSection_button.Button_arrowButton:hover {
+/* Hero Button Hover */
+.HeroSection_button.Button_arrowButton:hover {
         gap: 40px;
         transition: gap .3s ease;
-    }
+}
         
-	.HeroSection_button:hover .Button_arrowWrapper {
+.HeroSection_button:hover .Button_arrowWrapper {
     	transform: rotate(0deg);
         transition: transform .3s ease;
-	}
+}
 
 /* Content Button */
     
-        .ContentSection_button {
+.ContentSection_button {
             background-color: #4762ad;
             border: none;
             font-weight: 700;
@@ -49,14 +50,14 @@
             display: flex;
             align-items: center;
             justify-content: center;
-        }
+}
 /* ------------- PILL BUTTON ------------- */
-    .Button_pillButton {
+.Button_pillButton {
         border-radius: 1000px;
-    }
+}
     
 /* ------------- ARROW BUTTON ------------- */
-    .Button_arrowWrapper {
+.Button_arrowWrapper {
     	width: 44px;
     	height: 44px;
     	border-radius: 100%;
@@ -69,93 +70,93 @@
     	transform: rotate(-45deg);
     	transition: transform .3s ease;
     	flex-shrink: 0;
-	}
+}
     
-    .Button_arrowButton {
+.Button_arrowButton {
         padding: 6px 6px 6px 32px;
     	gap: 25px;
     	transition: gap .3s ease;
-    }
+}
     
 /* ------------- FLOATING BUTTON ------------- */    
-    /* Button Floating Animation */
-    .Button_buttonAnimation {
+/* Button Floating Animation */
+.Button_buttonAnimation {
         cursor: pointer;
         transition: all 0.3s ease-in-out;
         position: relative;
         overflow: hidden;
         animation: floating 2s infinite ease-in-out;
-    }
+}
 
-    /* Floating Up & Down Effect */
-    @keyframes floating {
+/* Floating Up & Down Effect */
+@keyframes floating {
         0% {
-            transform: translateY(0);
+		transform: translateY(0);
         }
 
         50% {
-            transform: translateY(-8px);
+            	transform: translateY(-8px);
         }
 
         /* Moves up */
         100% {
-            transform: translateY(0);
+            	transform: translateY(0);
         }
 
         /* Moves back down */
-    }    
+}    
 
 /* ======================================================================== */
 /* ------------------------------- SECTIONS ------------------------------- */
 /* ======================================================================== */
     
 /* ------------- HERO SECTION ------------- */
-    /* Section Container */
-    .Section_section {
+/* Section Container */
+.Section_section {
         width:100%;
         padding-left: 24px;
         padding-right: 24px;
-    }
+}
     
-    /* 1st Inner Column General Attributes */
-    .HeroSection_sectionBackground {
+/* 1st Inner Column General Attributes */
+.HeroSection_sectionBackground {
     	width: 100%; /* Makes it full width */
         position: relative;
         padding-right: 5%;
         padding-left: 5%;
         overflow: clip;
-    }
-    
-    /* 2nd Inner Column General Attributes */
-    .HeroSection_section {
+}
+
+/* 2nd Inner Column General Attributes */
+.HeroSection_section {
         margin: auto;
         width: 100%;
-    }
-    
-    .HeroSection_sectionLarge {
+}
+
+.HeroSection_sectionLarge {
         max-width: 1440px;
-    }
+}
     
-    @media (max-width: 1024px) {
-    	.HeroSection_sectionMedium {
-        	max-width: 90%;
+@media (max-width: 1024px) {
+	.HeroSection_sectionMedium {
+		max-width: 90%;
         }
-    }
+}
     
-    @media (max-width: 768px) {
+@media (max-width: 768px) {
     	.HeroSection_sectionSmall {
         	max-width: 90%;
         }
-    }
+}
     
-    .HeroSection_container {
+.HeroSection_container {
         display: flex;
         position: relative;
         align-items: stretch;
-    }
+}
     
-    /* Content */
-    .HeroSection_content {
+/* Content */
+.HeroSection_content {
     	display: flex;
         flex-direction: column;
         align-items: flex-start;
@@ -164,76 +165,76 @@
         flex-shrink: 0;
         width: auto;
         padding: 100px 0;
-    }
+}
     
-    .HeroSection_contentDescription {
+.HeroSection_contentDescription {
         margin: 0px;
         font-size: 18px;
     	line-height: 150%;
     	font-weight: 400;
-    }
+}
     
 /* ------------- CONTENT SECTION ------------- */  
 
-    /* 1st Inner Column General Attributes */
-    .ContentSection_sectionBackground {
+/* 1st Inner Column General Attributes */
+.ContentSection_sectionBackground {
     	width: 100%; /* Makes it full width */
         position: relative;
         padding-right: 5%;
         padding-left: 5%;
         overflow: clip;
-    }
+}
     
-    /* 2nd Inner Column General Attributes */
-    .ContentSection_section {
+/* 2nd Inner Column General Attributes */
+.ContentSection_section {
         margin: auto;
         width: 100%;
-    }
+}
     
-    .ContentSection_sectionLarge {
+.ContentSection_sectionLarge {
         max-width: 1040px;
-    }
+}
     
-    @media (max-width: 1024px) {
+@media (max-width: 1024px) {
     	.ContentSection_sectionMedium {
         	max-width: 800px;
         }
-    }
+}
     
-    @media (max-width: 768px) {
+@media (max-width: 768px) {
     	.ContentSection_sectionSmall {
         	max-width: 480px;
         }
-    }
+}
     
-	.ContentSection_container {
+.ContentSection_container {
         display: flex;
         position: relative;
         align-items: center;
         justify-content: space-evenly;
-    }
+}
         
-    .ServicesSection_container {
+.ServicesSection_container {
         display: flex;
         position: relative;
         flex-direction: column;
         gap: 48px;
-    }
+}
     
-    .ContentSection_buttonSectionLarge {
+.ContentSection_buttonSectionLarge {
         max-width: 1440px;
-    }
+}
     
-    .ContentSection_buttonSectionMedium {
+.ContentSection_buttonSectionMedium {
         max-width: 1440px;
-    }
+}
     
-    .ContentSection_buttonSectionSmall {
+.ContentSection_buttonSectionSmall {
         max-width: 1440px;
-    }
+}
     
-    /* Content */
-    .ContentSection_content {
+/* Content */
+.ContentSection_content {
     	display: flex;
         flex-direction: column;
         align-items: flex-start;
@@ -242,9 +243,9 @@
         flex-shrink: 0;
         width: auto;
         padding: 50px 0;
-    }
+}
     
-    .ProductSection_content {
+.ProductSection_content {
     	display: flex;
         flex-direction: column;
         align-items: flex-start;
@@ -256,9 +257,9 @@
         margin-top: 50px;
         margin-bottom: 50px;
         background-color: #fff;
-    }
+}
     
-    .headingSection {
+.headingSection {
         text-align: center;
         display: block;
         gap: 0px;
@@ -275,9 +276,9 @@
         justify-content: center;
         flex-direction: column;
         background: transparent;
-    }
-    
-    .ServicesSection_greenContentColumn {
+}
+
+.ServicesSection_greenContentColumn {
      	display: flex;
     	gap: 0px;
     	border: none;
@@ -292,30 +293,30 @@
     	border-radius: 20px;
     	height: 100%;
     	transition: background-color 0.3s;   
-    }
-    
-    /* Additional Elements */
-    .none-y-padding {
+}
+
+/* Additional Elements */
+.none-y-padding {
        	padding-top: 0;
         padding-bottom: 0;
-    }
+}
     
-    .none-x-padding {
+.none-x-padding {
         padding-left: 0;
         padding-right: 0;
-    }
+}
     
-    .has-border-radius {
+.has-border-radius {
         border-radius: 24px;
-    }
+}
     
-    .med-y-padding {
+.med-y-padding {
         padding-top: 64px;
         padding-bottom: 64px;
-    }
+}
     
-    /* Text Elements */
-    .headingXL h1 {
+/* Text Elements */
+.headingXL h1 {
         margin: 0;
         color: inherit;
         font-size: 56px!important;
@@ -325,44 +326,44 @@
         flex-shrink: 0;
         text-align: center;
         margin: 0 auto;
-    }
+}
 
-    /* ------------- BANNER STYLES ------------- */
-    
-	.HeroSection_green-wavesBackground {
+/* ------------- BANNER STYLES ------------- */
+
+.HeroSection_green-wavesBackground {
         background-image: url('https://notarypublicassociation.lightning.force.com/cms/media/MCNYNL3MZSORGETBHWF6PCCP3EYQ?version=3.1');
         background-size: cover; /* Adjusts image to cover the entire container */
         background-position: center center; /* Centers the image */
         background-repeat: no-repeat; /* Prevents the image from repeating */
-    }
+}
         
-    .HeroSection_plain-wavesBackground {
+.HeroSection_plain-wavesBackground {
         background-image: url('https://notarypublicassociation.lightning.force.com/cms/media/MCBDNEBUZZEZA6NKRXIVCZGTHXGM?version=1.1');
         background-size: cover; /* Adjusts image to cover the entire container */
         background-position: center center; /* Centers the image */
         background-repeat: no-repeat; /* Prevents the image from repeating */
-    }
+}
     
-    .ContentSection_peachBackground {
+.ContentSection_peachBackground {
         background-color: #f8e1d4;
-    }
+}
     
-    .ContentSection_yellowBackground {
+.ContentSection_yellowBackground {
         background-color: #f8f6d4;
-    }
-    
-    .ContentSection_greenBackground {
+}
+
+.ContentSection_greenBackground {
         background-color: #e9f7ef;
-    }
-    
-    .ContentSection_blueBackground {
+}
+
+.ContentSection_blueBackground {
         background-color: #d4eff8;
-    }
-    
-    .ContentSection_purpleBackground {
+}
+
+.ContentSection_purpleBackground {
         background-color: #d5d4f8;
-    }
-    
-    .ContentSection_blue-purple-gradientBackground {
+}
+
+.ContentSection_blue-purple-gradientBackground {
         background: linear-gradient(124deg, #c1f0ff 0%, #efdbf0 50%, #c8b5fa 100%);
-    }
+}
