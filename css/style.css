@@ -13,10 +13,10 @@
     
     /* Hero Button Styling */
     .HeroSection_button {
-        background-color: #fff!important;
+        background-color: #217c7c!important;
     	border: none;
     	font-weight: 700;
-    	color: #217c7c;
+    	color: #fff;
     	font-size: 18px;
     	cursor: pointer;
     	line-height: 1;
@@ -64,8 +64,8 @@
     	align-items: center;
     	justify-content: center;
     	font-size: 24px;
-    	background-color: #217c7c;
-    	color: #fff;
+    	background-color: #fff;
+    	color: #217c7c;
     	transform: rotate(-45deg);
     	transition: transform .3s ease;
     	flex-shrink: 0;
