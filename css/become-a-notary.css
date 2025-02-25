@@ -18,6 +18,7 @@
         background-size: contain; /* Adjusts image to cover the entire container */
         background-position: bottom; /* Centers the image */
         background-repeat: no-repeat; /* Prevents the image from repeating */
+	margin-bottom: -20px;
 }
     
 /* Hero Section Pill */
