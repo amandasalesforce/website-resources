@@ -1,24 +1,30 @@
 /* ======================================================================== */
 /* -------------------------- BECOME A NOTARY PAGE ------------------------ */
 /* ======================================================================== */
-    
-	/* ------------- Traditional - Banner ------------- */
 
-
-    .banner-image-traditional {
+.banner-image-become {
         background-image: url('https://notarypublicassociation.lightning.force.com/cms/media/MCIWAB35HR7VFLXPLK2WMT227FK4?version=1.1');
         background-size: contain; /* Adjusts image to cover the entire container */
         background-position: bottom; /* Centers the image */
         background-repeat: no-repeat; /* Prevents the image from repeating */
-    }
+}
+
+/* ------------- Traditional - Banner ------------- */
+
+.banner-image-traditional {
+	background-image: url('https://notarypublicassociation.lightning.force.com/cms/media/MCIWAB35HR7VFLXPLK2WMT227FK4?version=1.1');
+        background-size: contain; /* Adjusts image to cover the entire container */
+        background-position: bottom; /* Centers the image */
+        background-repeat: no-repeat; /* Prevents the image from repeating */
+}
     
-    /* Hero Section Pill */
+/* Hero Section Pill */
 
-    .HeroSection_pillWrapper {
+.HeroSection_pillWrapper {
         margin-bottom: 20px;
-    }
+}
 
-    .banner-section-pill {
+.banner-section-pill {
         border: 1px solid rgb(184, 226, 235);
         color: #217c7c;
         background-color: white;
@@ -33,39 +39,39 @@
         font-size: 18px;
         flex: 0;
         width: fit-content;
-    }
+}
 
-    .banner-section-pill-icon {
+.banner-section-pill-icon {
         display: flex;
         align-items: center;
         justify-content: center;
         flex-shrink: 0;
         font-size: 18px;
-    }
+}
 
-    .banner-section-pill-text {
+.banner-section-pill-text {
         display: flex;
         flex-direction: column;
         align-items: flex-start;
         gap: .25rem;
         font-size: 18px;
-    }
-    
+}
+
 /* ====================================================== */    
 /* ------------- Electronic - How to Apply ------------- */
 /* ====================================================== */ 
     
-	/* TIMELINE BASE STYLES */
-	.timeline {
+/* TIMELINE BASE STYLES */
+.timeline {
     	position: relative;
     	padding: 30px;
     	margin: 0 auto;
     	overflow: hidden;
     	color: #ffffff;
     	width: 100%;
-	}
+}
 	
-	.timeline:after {
+.timeline:after {
     	content: "";
     	position: absolute;
     	top: 0;
@@ -74,31 +80,31 @@
     	border-right: 2px solid #ecf0f4;
     	height: 100%;
     	display: block;
-	}
+}
 
-	/* TIMELINE ROW STYLES */
-	.timeline-row {
+/* TIMELINE ROW STYLES */
+.timeline-row {
     	padding-left: 50%;
     	position: relative;
     	margin-bottom: 30px;
-	}
+}
 
-	.timeline-row .timeline-content {
+.timeline-row .timeline-content {
     	position: relative;
     	padding: 20px 30px;
     	border-radius: 10px;
     	z-index: 3000;
-	}
+}
 
-	.timeline-row .timeline-content:after {
+.timeline-row .timeline-content:after {
     	content: "";
     	position: absolute;
     	top: 45%;
     	height: 40px;
     	width: 40px;
-	}
+}
 
-	.timeline-row .timeline-content:before {
+.timeline-row .timeline-content:before {
     	content: "";
     	position: absolute;
     	top: 48.5%;
@@ -109,14 +115,14 @@
     	z-index: 100;
     	border: 2px solid #2575fc;
     	background: #ffffff;
-	}
+}
 
-    /* ============================= */
-    /* TIMELINE CONTENT STYLES */
-    /* ============================= */
+/* ============================= */
+/* TIMELINE CONTENT STYLES */
+/* ============================= */
 
-    /* Header */
-    .timeline-row .timeline-content h4 {
+/* Header */
+.timeline-row .timeline-content h4 {
         margin: 0 0 20px 0;
         overflow: hidden;
         white-space: nowrap;
@@ -126,25 +132,25 @@
         font-family: Xfinity Standard;
         font-weight: 400;
         font-size: 22px;
-    }
+}
 
-    /* Description */
-    .timeline-row .timeline-content p {
+/* Description */
+.timeline-row .timeline-content p {
         margin-bottom: 30px;
         line-height: 150%;
         color: #000000;
         font-family: Xfinity Standard;
         font-weight: 400;
         text-align: justify;
-    }
+}
 
-    /* Icon */
-    .timeline-row .timeline-content #icon-1,
-    .timeline-row .timeline-content #icon-2,
-    .timeline-row .timeline-content #icon-3,
-    .timeline-row .timeline-content #icon-4,
-    .timeline-row .timeline-content #icon-5,
-    .timeline-row .timeline-content #icon-6 {
+/* Icon */
+.timeline-row .timeline-content #icon-1,
+.timeline-row .timeline-content #icon-2,
+.timeline-row .timeline-content #icon-3,
+.timeline-row .timeline-content #icon-4,
+.timeline-row .timeline-content #icon-5,
+.timeline-row .timeline-content #icon-6 {
         font-size: 22px;
         height: 50px;
         width: 50px;
@@ -154,47 +160,47 @@
         margin-bottom: 10px;
         display: inline-block;
         align-content: center;
-    }
+}
 
-    .timeline-row .timeline-content .thumbs {
+.timeline-row .timeline-content .thumbs {
         margin-bottom: 20px;
-    }
+}
 
-    .timeline-row .timeline-content .thumbs img {
+.timeline-row .timeline-content .thumbs img {
         margin-bottom: 10px;
-    }
+}
 
-    /* ============================= */
-    /* TIMELINE EVEN & ODD ROWS */
-    /* ============================= */
+/* ============================= */
+/* TIMELINE EVEN & ODD ROWS */
+/* ============================= */
 
-    /* EVEN ROWS */
-    .timeline-row:nth-child(even) .timeline-content {
+/* EVEN ROWS */
+.timeline-row:nth-child(even) .timeline-content {
         background-color: #ffffff;
         margin-left: 40px;
         text-align: justify;
         box-shadow: 0px 0px 40px rgba(0, 0, 0, .1);
-    }
+}
 
-    .timeline-row:nth-child(even) .timeline-content:after {
+.timeline-row:nth-child(even) .timeline-content:after {
         left: -39px;
         border-right: 20px solid #fff;
         border-top: 20px solid transparent;
         border-bottom: 20px solid transparent;
-    }
+}
 
-    .timeline-row:nth-child(even) .timeline-content:before {
+.timeline-row:nth-child(even) .timeline-content:before {
         left: -50px;
         right: initial;
-    }
+}
 
-    /* ODD ROWS */
-    .timeline-row:nth-child(odd) {
+/* ODD ROWS */
+.timeline-row:nth-child(odd) {
         padding-left: 0;
         padding-right: 50%;
-    }
+}
 
-    .timeline-row:nth-child(odd) .timeline-content {
+.timeline-row:nth-child(odd) .timeline-content {
         background-color: #ffffff;
         margin-right: 40px;
         margin-left: 0;
