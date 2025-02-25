@@ -28,8 +28,6 @@
 }
 
 .banner-section-pill {
-        border: 1px solid rgb(184, 226, 235);
-        color: #217c7c;
         background-color: white;
         font-weight: 500;
         line-height: 1;
@@ -42,6 +40,10 @@
         font-size: 18px;
         flex: 0;
         width: fit-content;
+}
+.greenPill {
+	color: rgb(52, 167, 91);
+	border: 1px solid rgb(203, 234, 217);
 }
 
 .banner-section-pill-icon {
