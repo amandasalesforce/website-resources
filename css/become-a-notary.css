@@ -2,6 +2,9 @@
 /* -------------------------- BECOME A NOTARY PAGE ------------------------ */
 /* ======================================================================== */
 
+
+
+
 .banner-image-become {
         background-image: url('https://notarypublicassociation.lightning.force.com/cms/media/MCLONXS2ZGPBBOVF2CRH37NPZJ6U?version=1.2');
         background-size: contain; /* Adjusts image to cover the entire container */
@@ -9,6 +12,24 @@
         background-repeat: no-repeat; /* Prevents the image from repeating */
 	margin-top: 20px;
     	margin-bottom: 20px;
+}
+
+/* ------------- Sticky Menu ------------- */
+#sticky-menuLink {
+    text-decoration: none !important;
+}
+
+.sticky-menuButton:hover, .sticky-menuButton:active {
+    background: #333;
+    color: #fff;
+    text-decoration: none;
+}
+.sticky-menuButton {
+    display: block;
+    background: #fff;
+    padding: 10px 12px;
+    border-radius: 8px;
+    color: #333;
 }
 
 /* ------------- Traditional - Banner ------------- */
