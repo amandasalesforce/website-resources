@@ -206,25 +206,25 @@
         margin-left: 0;
         text-align: right;
         box-shadow: 0px 0px 40px rgba(0, 0, 0, .1);
-    }
+}
 
-    .timeline-row:nth-child(odd) .timeline-content:after {
+.timeline-row:nth-child(odd) .timeline-content:after {
         right: -39px;
         border-left: 20px solid #ffffff;
         border-top: 20px solid transparent;
         border-bottom: 20px solid transparent;
-    }
+}
 
-    .timeline-row:nth-child(odd) .timeline-time {
+.timeline-row:nth-child(odd) .timeline-time {
         right: auto;
         left: 50%;
         text-align: left;
         margin-right: 0;
         margin-left: 20px;
-    }
+}
 
-	/* ELECTRONIC WATERMARK ICONS */
-	.timeline-row .watermark-icon-wrapper {
+/* ELECTRONIC WATERMARK ICONS */
+.timeline-row .watermark-icon-wrapper {
     	position: absolute;
     	line-height: 1;
     	pointer-events: none;
@@ -232,39 +232,37 @@
     	width: 150px;
     	height: 150px;
     	vertical-align: middle;
-	}
+}
 
-    .timeline-row:nth-child(odd) .watermark-icon-wrapper {
+.timeline-row:nth-child(odd) .watermark-icon-wrapper {
     	bottom: 3%;
     	left: 2%;
     	align-content: flex-end;
     	text-align: left;
-	}
+}
 
-	.timeline-row:nth-child(even) .watermark-icon-wrapper {
+.timeline-row:nth-child(even) .watermark-icon-wrapper {
     	bottom: 3%;
     	right: 1%;
     	align-content: flex-end;
     	text-align: right;
-	}
+}
 
-	#watermark-icon {
+#watermark-icon {
     	font-size: 120px;
     	opacity: 0;
     	color: inherit;
 	}
     
-    .timeline-row:hover #watermark-icon {
-        	opacity: .15;
-    }
+.timeline-row:hover #watermark-icon { opacity: .15;}
 
-	/* Watermark Background Colors */
-	#icon-1 { background: #0ccbf4; text-align: center; }
-	#icon-2 { background: #945fff; text-align: center; }
-	#icon-3 { background: #3f8ee9; text-align: center; }
-	#icon-4 { background: #f26f9b; text-align: center; }
-	#icon-5 { background: #dc432b; text-align: center; }
-	#icon-6 { background: #0ab787; text-align: center; }
+/* Watermark Background Colors */
+#icon-1 { background: #0ccbf4; text-align: center; }
+#icon-2 { background: #945fff; text-align: center; }
+#icon-3 { background: #3f8ee9; text-align: center; }
+#icon-4 { background: #f26f9b; text-align: center; }
+#icon-5 { background: #dc432b; text-align: center; }
+#icon-6 { background: #0ab787; text-align: center; }
 
     /* ============================= */
     /* HOVER EFFECTS */
