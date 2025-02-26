@@ -15,7 +15,7 @@ document.addEventListener("DOMContentLoaded", function () {
     function checkSticky() {
         const scrollOffset = window.scrollY || window.pageYOffset;
 
-        if (scrollOffset >= menu.offsetTop + 800) {
+        if (scrollOffset >= menu.offsetTop + 700) {
             if (!menu.classList.contains("sticky")) {
                 menu.classList.add("sticky");
                 menu.parentNode.insertBefore(placeholder, menu);
@@ -32,37 +32,36 @@ document.addEventListener("DOMContentLoaded", function () {
 
     function highlightMenu() {
         let scrollPosition = window.scrollY || document.documentElement.scrollTop;
-        let activeFound = false;
+        let activeSection = null;
 
         sections.forEach((section) => {
             const sectionTop = section.offsetTop - 150;
             const sectionBottom = sectionTop + section.offsetHeight;
-            const targetLink = document.querySelector(`.sticky-menuWrapper a[href="#${section.id}"]`);
 
             if (scrollPosition >= sectionTop && scrollPosition < sectionBottom) {
-                if (targetLink) {
-                    const button = targetLink.querySelector(".sticky-menuButton");
-                    if (button) {
-                        console.log(`Adding active class to: ${section.id}`); // Debugging
-                        button.classList.add("active");
-                        activeFound = true;
-                    }
-                }
+                activeSection = section.id;
             }
         });
 
-        // Remove active class from buttons that are not in the active section
-        menuLinks.forEach((link) => {
-            const button = link.querySelector(".sticky-menuButton");
-            if (button && !activeFound) {
-                console.log(`Removing active class from: ${button.innerText}`); // Debugging
-                button.classList.remove("active");
-            }
-        });
+        if (activeSection) {
+            menuLinks.forEach((link) => {
+                const button = link.querySelector(".sticky-menuButton");
+                if (button) {
+                    if (link.getAttribute("href") === `#${activeSection}`) {
+                        button.classList.add("active");
+                    } else {
+                        button.classList.remove("active");
+                    }
+                }
+            });
+        }
     }
 
     window.addEventListener("scroll", function () {
         checkSticky();
         highlightMenu();
     });
+
+    // Run highlightMenu on load in case user refreshes in the middle of the page
+    highlightMenu();
 });
