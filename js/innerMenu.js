@@ -8,12 +8,34 @@ document.addEventListener("DOMContentLoaded", function () {
         return;
     }
 
+    const placeholder = document.createElement("div");
+    placeholder.style.width = menu.offsetWidth + "px"; 
+    placeholder.style.height = menu.offsetHeight + "px"; 
+
+    function checkSticky() {
+        const scrollOffset = window.scrollY || document.documentElement.scrollTop;
+
+        if (scrollOffset >= menu.offsetTop + 700) { // Adjusted trigger position
+            if (!menu.classList.contains("sticky")) {
+                menu.classList.add("sticky");
+                menu.parentNode.insertBefore(placeholder, menu);
+            }
+        } else {
+            if (menu.classList.contains("sticky")) {
+                menu.classList.remove("sticky");
+                if (placeholder.parentNode) {
+                    placeholder.parentNode.removeChild(placeholder);
+                }
+            }
+        }
+    }
+
     function highlightMenu() {
         let scrollPosition = window.scrollY || document.documentElement.scrollTop;
         let activeSection = null;
 
         sections.forEach((section) => {
-            const sectionTop = section.offsetTop - 150;
+            const sectionTop = section.offsetTop - 150; // Adjust for sticky menu height
             const sectionBottom = sectionTop + section.offsetHeight;
 
             if (scrollPosition >= sectionTop && scrollPosition < sectionBottom) {
@@ -36,6 +58,10 @@ document.addEventListener("DOMContentLoaded", function () {
         }
     }
 
-    window.addEventListener("scroll", highlightMenu);
-    highlightMenu(); // Run once on page load
+    window.addEventListener("scroll", function () {
+        checkSticky();
+        highlightMenu();
+    });
+
+    highlightMenu(); // Run once on page load in case user refreshes in the middle of the page
 });
