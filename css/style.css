@@ -246,6 +246,24 @@
         padding: 50px 0;
 }
 
+.ContentSection_contentColumns {
+    width: 100%;
+    display: flex;
+    gap: 5%;
+    border: none;
+    margin-left: 0px;
+    margin-right: 0px;
+    padding: 0px;
+    flex-flow: row;
+    margin-bottom: 0px;
+    min-width: 0px;
+    max-width: 100%;
+    -webkit-box-align: stretch;
+    align-items: stretch;
+    border-radius: 0px;
+    background: transparent;
+}
+
 .ContentSection_contentImage {
 	width: 50%;
 	position: relative;
