@@ -10,7 +10,7 @@ document.addEventListener("DOMContentLoaded", function () {
         const menuTop = menu.getBoundingClientRect().top; // Get position relative to viewport
         const scrollOffset = window.scrollY || window.pageYOffset; // Get scroll position
 
-        if (scrollOffset >= menu.offsetTop + 20) {
+        if (scrollOffset >= menu.offsetTop + 800) {
             menu.classList.add("sticky");
         } else {
             menu.classList.remove("sticky");
