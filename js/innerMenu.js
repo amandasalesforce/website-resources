@@ -6,14 +6,25 @@ document.addEventListener("DOMContentLoaded", function () {
         return;
     }
 
-    function checkSticky() {
-        const menuTop = menu.getBoundingClientRect().top; // Get position relative to viewport
-        const scrollOffset = window.scrollY || window.pageYOffset; // Get scroll position
+    const placeholder = document.createElement("div"); // Create a placeholder
+    placeholder.style.width = menu.offsetWidth + "px"; 
+    placeholder.style.height = menu.offsetHeight + "px"; // Match menu height
 
-        if (scrollOffset >= menu.offsetTop + 800) {
-            menu.classList.add("sticky");
+    function checkSticky() {
+        const scrollOffset = window.scrollY || window.pageYOffset;
+
+        if (scrollOffset >= menu.offsetTop + 800) { // Adjusted scroll position
+            if (!menu.classList.contains("sticky")) {
+                menu.classList.add("sticky");
+                menu.parentNode.insertBefore(placeholder, menu); // Add placeholder
+            }
         } else {
-            menu.classList.remove("sticky");
+            if (menu.classList.contains("sticky")) {
+                menu.classList.remove("sticky");
+                if (placeholder.parentNode) {
+                    placeholder.parentNode.removeChild(placeholder); // Remove placeholder
+                }
+            }
         }
     }
 
