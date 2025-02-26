@@ -60,6 +60,11 @@ commerce_builder-drilldown-navigation.header-nav {
     	align-items: center;
     	gap: 15px;
 }
+
+.scrolled {
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2); /* Adjust shadow as needed */
+    transition: box-shadow 0.3s ease-in-out; /* Smooth effect */
+}
     
 /* Cart */
     
