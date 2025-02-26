@@ -1,6 +1,6 @@
 document.addEventListener("DOMContentLoaded", function () {
     const menu = document.querySelector(".sticky-menuWrapper");
-    const header = document.querySelector(".site-header"); // Select your website header
+    const header = document.querySelector(".lwc-4g1q55crn48.header"); // Select your website header
 
     if (!menu) {
         console.warn("Sticky menu not found on this page. Skipping script.");
