@@ -17,6 +17,7 @@
 /* ------------- Sticky Menu ------------- */
 .sticky-menuWrapper {
 	position: relative; /* Default position */
+	top: 0;
 	width: 100%;
 	background: white;
 	padding: 10px;
