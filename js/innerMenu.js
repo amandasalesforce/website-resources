@@ -1,5 +1,7 @@
 document.addEventListener("DOMContentLoaded", function () {
     const menu = document.querySelector(".sticky-menuWrapper");
+    const sections = document.querySelectorAll("div[id^='Section_']");
+    const menuButtons = document.querySelectorAll(".sticky-menuWrapper a");
 
     if (!menu) {
         console.warn("Sticky menu not found on this page. Skipping script.");
@@ -28,5 +30,25 @@ document.addEventListener("DOMContentLoaded", function () {
         }
     }
 
-    window.addEventListener("scroll", checkSticky);
+    function highlightMenu() {
+        let scrollPosition = window.scrollY || document.documentElement.scrollTop;
+
+        sections.forEach((section) => {
+            const sectionTop = section.offsetTop - 150; // Adjust for sticky menu height
+            const sectionBottom = sectionTop + section.offsetHeight;
+            const targetButton = document.querySelector(`.sticky-menuWrapper a[href="#${section.id}"]`);
+
+            if (scrollPosition >= sectionTop && scrollPosition < sectionBottom) {
+                menuButtons.forEach((btn) => btn.classList.remove("active"));
+                if (targetButton) {
+                    targetButton.classList.add("active");
+                }
+            }
+        });
+    }
+
+    window.addEventListener("scroll", function () {
+        checkSticky();
+        highlightMenu();
+    });
 });
