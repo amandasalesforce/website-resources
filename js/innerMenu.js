@@ -8,28 +8,6 @@ document.addEventListener("DOMContentLoaded", function () {
         return;
     }
 
-    const placeholder = document.createElement("div");
-    placeholder.style.width = menu.offsetWidth + "px"; 
-    placeholder.style.height = menu.offsetHeight + "px"; 
-
-    function checkSticky() {
-        const scrollOffset = window.scrollY || window.pageYOffset;
-
-        if (scrollOffset >= menu.offsetTop + 700) {
-            if (!menu.classList.contains("sticky")) {
-                menu.classList.add("sticky");
-                menu.parentNode.insertBefore(placeholder, menu);
-            }
-        } else {
-            if (menu.classList.contains("sticky")) {
-                menu.classList.remove("sticky");
-                if (placeholder.parentNode) {
-                    placeholder.parentNode.removeChild(placeholder);
-                }
-            }
-        }
-    }
-
     function highlightMenu() {
         let scrollPosition = window.scrollY || document.documentElement.scrollTop;
         let activeSection = null;
@@ -49,6 +27,7 @@ document.addEventListener("DOMContentLoaded", function () {
                 if (button) {
                     if (link.getAttribute("href") === `#${activeSection}`) {
                         button.classList.add("active");
+                        console.log(`✅ Active button: ${button.innerText}`);
                     } else {
                         button.classList.remove("active");
                     }
@@ -57,11 +36,6 @@ document.addEventListener("DOMContentLoaded", function () {
         }
     }
 
-    window.addEventListener("scroll", function () {
-        checkSticky();
-        highlightMenu();
-    });
-
-    // Run highlightMenu on load in case user refreshes in the middle of the page
-    highlightMenu();
+    window.addEventListener("scroll", highlightMenu);
+    highlightMenu(); // Run once on page load
 });
