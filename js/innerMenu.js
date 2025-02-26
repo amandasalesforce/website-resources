@@ -35,7 +35,7 @@ document.addEventListener("DOMContentLoaded", function () {
         let activeSection = null;
 
         sections.forEach((section) => {
-            const parentSection = section.closest(".comm-section-container, .col-size_12-of-12"); 
+            const parentSection = section.closest(".comm-section-container, .col-size_12-of-12");
             if (!parentSection) return;
 
             const sectionTop = parentSection.offsetTop - 150;
@@ -43,21 +43,28 @@ document.addEventListener("DOMContentLoaded", function () {
 
             if (scrollPosition >= sectionTop && scrollPosition < sectionBottom) {
                 activeSection = section.id;
+                console.log(`✅ Active Section: ${activeSection}`); // Debugging
             }
         });
 
+        // Remove active class from all buttons first
+        menuLinks.forEach((link) => {
+            const button = link.querySelector(".sticky-menuButton");
+            if (button) {
+                button.classList.remove("active");
+            }
+        });
+
+        // Apply active class to the correct button
         if (activeSection) {
-            menuLinks.forEach((link) => {
-                const button = link.querySelector(".sticky-menuButton");
-                if (button) {
-                    if (link.getAttribute("href") === `#${activeSection}`) {
-                        button.classList.add("active");
-                        console.log(`✅ Active button: ${button.innerText}`);
-                    } else {
-                        button.classList.remove("active");
-                    }
+            const activeLink = document.querySelector(`.sticky-menuWrapper a[href="#${activeSection}"]`);
+            if (activeLink) {
+                const activeButton = activeLink.querySelector(".sticky-menuButton");
+                if (activeButton) {
+                    activeButton.classList.add("active");
+                    console.log(`✅ Active Button: ${activeButton.innerText}`); // Debugging
                 }
-            });
+            }
         }
     }
 
