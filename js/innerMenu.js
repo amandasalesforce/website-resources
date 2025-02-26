@@ -1,7 +1,8 @@
 document.addEventListener("DOMContentLoaded", function () {
     const menu = document.querySelector(".sticky-menuWrapper");
     const sections = document.querySelectorAll("div[id^='Section_']");
-    const menuButtons = document.querySelectorAll(".sticky-menuWrapper a");
+    const menuLinks = document.querySelectorAll(".sticky-menuWrapper a");
+    const menuButtons = document.querySelectorAll(".sticky-menuButton");
 
     if (!menu) {
         console.warn("Sticky menu not found on this page. Skipping script.");
@@ -36,12 +37,15 @@ document.addEventListener("DOMContentLoaded", function () {
         sections.forEach((section) => {
             const sectionTop = section.offsetTop - 150; // Adjust for sticky menu height
             const sectionBottom = sectionTop + section.offsetHeight;
-            const targetButton = document.querySelector(`.sticky-menuWrapper a[href="#${section.id}"]`);
+            const targetLink = document.querySelector(`.sticky-menuWrapper a[href="#${section.id}"]`);
 
             if (scrollPosition >= sectionTop && scrollPosition < sectionBottom) {
                 menuButtons.forEach((btn) => btn.classList.remove("active"));
-                if (targetButton) {
-                    targetButton.classList.add("active");
+                if (targetLink) {
+                    const button = targetLink.querySelector(".sticky-menuButton");
+                    if (button) {
+                        button.classList.add("active");
+                    }
                 }
             }
         });
