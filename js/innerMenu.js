@@ -15,7 +15,7 @@ document.addEventListener("DOMContentLoaded", function () {
     function checkSticky() {
         const scrollOffset = window.scrollY || document.documentElement.scrollTop;
 
-        if (scrollOffset >= menu.offsetTop + 700) { // Adjusted trigger position
+        if (scrollOffset >= menu.offsetTop + 700) { // Adjusted scroll position
             if (!menu.classList.contains("sticky")) {
                 menu.classList.add("sticky");
                 menu.parentNode.insertBefore(placeholder, menu);
@@ -35,8 +35,9 @@ document.addEventListener("DOMContentLoaded", function () {
         let activeSection = null;
 
         sections.forEach((section) => {
-            const sectionTop = section.offsetTop - 150; // Adjust for sticky menu height
-            const sectionBottom = sectionTop + section.offsetHeight;
+            const parentSection = section.closest(".slds-section") || section.closest(".slds-col"); // Find the closest Salesforce section or column
+            const sectionTop = parentSection ? parentSection.offsetTop - 150 : section.offsetTop - 150; 
+            const sectionBottom = sectionTop + (parentSection ? parentSection.offsetHeight : section.offsetHeight);
 
             if (scrollPosition >= sectionTop && scrollPosition < sectionBottom) {
                 activeSection = section.id;
