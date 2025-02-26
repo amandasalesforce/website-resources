@@ -32,7 +32,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
     function highlightMenu() {
         let scrollPosition = window.scrollY || document.documentElement.scrollTop;
-        let foundActive = false;
+        let activeFound = false;
 
         sections.forEach((section) => {
             const sectionTop = section.offsetTop - 150;
@@ -43,17 +43,19 @@ document.addEventListener("DOMContentLoaded", function () {
                 if (targetLink) {
                     const button = targetLink.querySelector(".sticky-menuButton");
                     if (button) {
+                        console.log(`Adding active class to: ${section.id}`); // Debugging
                         button.classList.add("active");
-                        foundActive = true;
+                        activeFound = true;
                     }
                 }
             }
         });
 
-        // Remove active class from all buttons except the one that should be active
+        // Remove active class from buttons that are not in the active section
         menuLinks.forEach((link) => {
             const button = link.querySelector(".sticky-menuButton");
-            if (button && !foundActive) {
+            if (button && !activeFound) {
+                console.log(`Removing active class from: ${button.innerText}`); // Debugging
                 button.classList.remove("active");
             }
         });
