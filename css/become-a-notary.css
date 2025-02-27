@@ -141,17 +141,13 @@
         flex: 0;
         width: fit-content;
 }
-.greenPill {
-	color: rgb(52, 167, 91);
-	border: 1px solid rgb(203, 234, 217);
+.themePill {
+	color: #217c7c;
+	border: 1px solid rgb(203, 234, 233);
 	background-color: white;
 }
 
-.themePill {
-	color: #217c7c;
-	border: 1px solid rgb(203, 234, 217);
-	background-color: #e9f7f6;
-}
+
 
 .banner-section-pill-icon {
         display: flex;
