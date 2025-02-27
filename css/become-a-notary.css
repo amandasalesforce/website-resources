@@ -40,10 +40,10 @@
 }
 
 .sticky-menuButton.active {
-    background-color: #007bff !important; /* Ensure color change */
-    color: white !important;
-    font-weight: bold;
-    transition: background-color 0.3s ease-in-out;
+	background-color: #217c7c;
+	color: white;
+	font-weight: bold;
+	transition: background-color 0.3s ease-in-out;
 }
 
 .sticky-menuButton {
