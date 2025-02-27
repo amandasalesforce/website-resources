@@ -264,7 +264,7 @@
 	min-width: 0px;
 	max-width: 100%;
 	-webkit-box-align: stretch;
-	align-items: stretch;
+	align-items: center;
 	border-radius: 0px;
 	background: transparent;
 }
