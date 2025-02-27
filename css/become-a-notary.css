@@ -25,25 +25,13 @@
 	transition: all 0.3s ease-in-out;
 	display: flex;
 	flex-direction: row;
-	justify-content: space-between;
-	align-content: center;
+	justify-content: center;
+	align-items: center;
+	gap: 10px;
 }
 
 #sticky-menuLink {
     	text-decoration: none !important;
-}
-
-.sticky-menuButton:hover {
-	background: #333;
-	color: #fff;
-	text-decoration: none;
-}
-
-.sticky-menuButton.active {
-	background-color: #217c7c;
-	color: white;
-	font-weight: bold;
-	transition: background-color 0.3s ease-in-out;
 }
 
 .sticky-menuButton {
@@ -52,8 +40,23 @@
     	padding: 10px 12px;
     	border-radius: 8px;
     	color: #333;
-	width: 166px;
+	width: 120px;
 	text-align: center;
+	font-size: 14px;
+	font-weight: 500;
+}
+
+.sticky-menuButton:hover {
+	background: #333;
+	color: #fff;
+	text-decoration: none;
+	transition: background-color 0.3s ease-in-out;
+}
+
+.sticky-menuButton.active {
+	background-color: #217c7c;
+	color: #fff;
+	transition: background-color 0.3s ease-in-out;
 }
 
 .sticky {
@@ -148,7 +151,7 @@
 
 .ContentSection_contentImage_traditional {
 	background-image: url(https://notarypublicassociation.lightning.force.com/cms/media/MCSQ7GXZPRT5HNREC3C5L7PSAJKQ?version=1.1);
-	background-size: contain;
+	background-size: cover;
 	background-position: center;
         background-repeat: no-repeat;
 }
