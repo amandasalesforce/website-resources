@@ -69,6 +69,13 @@
 	justify-content: center;	
 }
 
+.divider {
+        background-color: #e3e8ef;
+        width: 1px;
+        height: 16px;
+        margin: auto 21px auto 21px;
+}
+
 /* ------------- Traditional - Banner ------------- */
 
 .banner-image-traditional {
