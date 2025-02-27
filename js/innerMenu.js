@@ -35,15 +35,11 @@ document.addEventListener("DOMContentLoaded", function () {
         let activeSection = null;
 
         sections.forEach((section) => {
-            const parentSection = section.closest(".comm-section-container, .col-size_12-of-12");
-            if (!parentSection) return;
-
-            const sectionTop = parentSection.offsetTop - 150;
-            const sectionBottom = sectionTop + parentSection.offsetHeight;
+            const sectionTop = section.offsetTop - 150; // Adjust for sticky menu height
+            const sectionBottom = sectionTop + section.offsetHeight;
 
             if (scrollPosition >= sectionTop && scrollPosition < sectionBottom) {
                 activeSection = section.id;
-                console.log(`✅ Active Section: ${activeSection}`); // Debugging
             }
         });
 
@@ -62,7 +58,7 @@ document.addEventListener("DOMContentLoaded", function () {
                 const activeButton = activeLink.querySelector(".sticky-menuButton");
                 if (activeButton) {
                     activeButton.classList.add("active");
-                    console.log(`✅ Active Button: ${activeButton.innerText}`); // Debugging
+                    console.log(`✅ Active Button: ${activeButton.innerText}`);
                 }
             }
         }
