@@ -146,6 +146,12 @@
 	line-height: 150%;
 }
 
+.ContentSection_traditionalBackgroundImage {
+	background-image: url(https://notarypublicassociation.lightning.force.com/cms/media/MCSQ7GXZPRT5HNREC3C5L7PSAJKQ?version=1.1);
+	background-size: contain;
+	background-position: center;
+        background-repeat: no-repeat;
+}
 
 /* ====================================================== */    
 /* ------------- Electronic - How to Apply ------------- */
