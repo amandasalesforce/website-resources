@@ -191,6 +191,12 @@
 	font-weight: 600;
 }
 
+.inline_doubleButton {
+    display: flex;
+    justify-content: space-between;
+    gap: 50px;
+}
+
 .ContentSection_contentImage_traditional {
 	background-image: url(https://notarypublicassociation.lightning.force.com/cms/media/MCSQ7GXZPRT5HNREC3C5L7PSAJKQ?version=1.1);
 	background-size: cover;
