@@ -391,6 +391,10 @@
         margin: 0 auto;
 }
 
+.tableHeader {
+	font-weight: 500;
+]
+
 /* ------------- BANNER STYLES ------------- */
 
 .HeroSection_green-wavesBackground {
