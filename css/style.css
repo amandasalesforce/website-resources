@@ -427,6 +427,10 @@
         background-color: #d5d4f8;
 }
 
+.ContentSection_whiteBackground {
+        background-color: #ffffff;
+}
+
 .ContentSection_blue-purple-gradientBackground {
         background: linear-gradient(124deg, #c1f0ff 0%, #efdbf0 50%, #c8b5fa 100%);
 }
