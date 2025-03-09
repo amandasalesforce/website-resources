@@ -952,24 +952,28 @@
     }   
 
 	/* ------------- Commission Comparison Table ------------- */
-	
+
+	.comparison-table-html .lwc-1nf8r8ii43j.cb-outputRichText-container {
+		height: 800px;
+	}
+
 	/* Ensure styles only affect the comparison table */
 	.comparison-container {
-	    position: relative;
-	    max-width: 1056px;
-	    margin: auto;
-	    font-family: Xfinity Standard;
+		position: relative;
+		max-width: 1056px;
+		margin: auto;
+		font-family: Xfinity Standard;
 	}
 	
 	/* Layer 1: Background Rows */
 	.row-layer {
-	    display: grid;
-	    grid-template-rows: repeat(8, 1fr);
-	    gap: 10px;
-	    position: relative;
-	    width: 100%;
-	    height: 100%;
-	    z-index: 1;
+		display: grid;
+		grid-template-rows: repeat(8, 1fr);
+		gap: 10px;
+		position: relative;
+		width: 100%;
+		height: 100%;
+		z-index: 1;
 	}
 	
 	.row.header {
@@ -1012,30 +1016,31 @@
 	}
 	
 	.text-column {
-	    width: 232px;
+		width: 232px;
 	}
 	
 	.has-margin-right {
-	    margin-right: 13px;
+		margin-right: 13px;
 	}
 	
 	/* Layer 3: Text Content */
 	.text-layer {
-	    display: grid;
-	    grid-template-columns: 1fr 1fr 1fr 1fr;
-	    grid-template-rows: repeat(8, 1fr);
-	    position: absolute;
-	    width: 1000px;
-	    height: 100%;
-	    z-index: 3;
-	    top: 0;
-	    left: 0;
+		display: grid;
+		grid-template-columns: 1fr 1fr 1fr 1fr;
+		grid-template-rows: repeat(8, 1fr);
+		position: absolute;
+		width: 1000px;
+		height: 100%;
+		z-index: 3;
+		top: 0;
+		left: 50%;
+		transform: translateX(-50%);
 	}
 	
 	.label {
-	    color: white;
-	    font-weight: 400;
-	    font-size: 18px;
+		color: white;
+		font-weight: 400;
+		font-size: 18px;
 	}
 	
 	.label-wrapper {
@@ -1072,10 +1077,10 @@
 	}
 	
 	.text.header span {
-	    line-height: 1; /* Reduces space between lines */
-	    display: inline-block; /* Ensures correct spacing */
-	    padding: 0; /* Remove unnecessary padding */
-	    margin: 0; /* Remove any extra margins */
+	    line-height: 1;
+	    display: inline-block;
+	    padding: 0;
+	    margin: 0;
 	    font-size: 14px;
 	}
 	
@@ -1086,7 +1091,7 @@
 	    height: 60px;
 	    align-content: center;
 	    padding: 10px 11px;
-	    width: 210px;
+	    width: 232px;
 	}
 	
 	/* Tablet */
