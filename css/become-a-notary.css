@@ -1069,7 +1069,7 @@
 	}
 	
 	.text.header {
-	    height: 70px;
+	    height: 80px;
 	    font-size: 22px;
 	    font-weight: 500;
 	    align-content: flex-start;
@@ -1088,7 +1088,7 @@
 	    text-align: center;
 	    font-weight: 400;
 	    font-size: 16px;
-	    height: 60px;
+	    height: 70px;
 	    align-content: center;
 	    padding: 10px 11px;
 	    width: 232px;
