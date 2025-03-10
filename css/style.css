@@ -147,6 +147,11 @@
 	.HeroSection_sectionMedium {
 		max-width: 90%;
         }
+	
+	.TableSection_sectionMedium {
+		max-width: 100%;
+        }
+	
 }
     
 @media (max-width: 768px) {
