@@ -985,42 +985,45 @@
 	/* Layer 1: Background Rows */
 	.row-layer {
 		display: grid;
-		gap: 10px;
 		position: relative;
 		width: 100%;
 		height: 100%;
 		z-index: 1;
 	}
 	
-	.table-one.row-layer, table-one.text-layer {
-		grid-template-rows: repeat(8, 1fr);
+	.table-one.row-layer, .table-one.text-layer {
+    		grid-template-rows: .75fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
 	}
 
 	.table-two.row-layer, .table-two.text-layer {
-		grid-template-rows: repeat(5, 1fr);
+    		grid-template-rows: .75fr 1fr 1fr 1fr 1fr;
 	}
 
 	.table-three.row-layer, .table-three.text-layer {
-		grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+		grid-template-rows: .75fr 1fr 1fr 1fr 1fr;
 	}
-	
+
 	.row.header {
 		background-color: unset;
+		height: 90px;
+    		margin-bottom: 0px;
 	}
 	
 	.row {
 		background-color: #217c7c;
 	}
 
-	.table-one.row {
+	.table-one.row, table-one.text, .table-one.label-wrapper {
 		height: 80px;
+		margin-bottom: 10px;
 	}
 
-	.table-one.row {
-		height: 80px;
+	.table-two.row, .table-two.text, .table-two.label-wrapper {
+    		height: 90px;
+    		margin-bottom: 10px;
 	}
 
-	.table-one.row {
+	.table-three.row, .table-three.text, .table-three.label-wrapper {
 		height: 80px;
 	}
 
@@ -1083,7 +1086,6 @@
 	.text-layer {
 		display: grid;
 		grid-template-columns: 1fr 1fr 1fr 1fr;
-		grid-template-rows: repeat(8, 1fr);
 		position: absolute;
 		width: 1000px;
 		height: 100%;
@@ -1104,7 +1106,6 @@
 		align-items: center;
 		padding-left: 15px;
 		width: 255px;
-		height: 80px;
 		margin-bottom: 10px;
 	}
 
@@ -1143,12 +1144,13 @@
 		margin: 0;
 		font-size: 14px;
 	}
-	
+
+
+
 	.text, .text-summary {
 		text-align: center;
 		font-weight: 400;
 		font-size: 16px;
-		height: 80px;
 		align-content: center;
 		padding: 10px 11px;
 		width: 232px;
