@@ -1003,10 +1003,10 @@
 		grid-template-rows: .75fr 1fr 1fr 1fr 1fr;
 	}
 
-	.row.header {
+	.row-header {
 		background-color: unset;
-		height: 90px;
-    		margin-bottom: 0px;
+		height: 90px!important;
+    		margin-bottom: 0px!important;
 	}
 	
 	.row {
@@ -1189,7 +1189,7 @@
 			margin: 0 auto;
 		}
 		
-		.row.header {
+		.row-header {
 			height: 80px;
 		}
 		
@@ -1215,7 +1215,7 @@
 			max-width: 755px;
 	    	}
 	
-	    	.text.header.label-header {
+	    	.label-header {
 		        width: 225px;
 		        height: 80px;
 		        font-size: 16px;
@@ -1250,12 +1250,12 @@
 	        	font-size: 16px;
 	    	}
 	
-	    	.text.header {
+	    	.text-header {
 	        	height: 80px;
 	        	font-size: 16px;
 	    	}
 	
-	    	.text.header span {
+	    	.text-header span {
 	        	font-size: 12px;
 	    	}
 	
