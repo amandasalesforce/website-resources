@@ -955,7 +955,7 @@
 
 	/* Component Height */
 	.comparison-table-html-1 .lwc-1nf8r8ii43j.cb-outputRichText-container {
-		height: 770px;
+		height: 780px;
 	}
 
 	.comparison-table-html-2 .lwc-1nf8r8ii43j.cb-outputRichText-container {
@@ -963,7 +963,7 @@
 	}
 
 	.comparison-table-html-3 .lwc-1nf8r8ii43j.cb-outputRichText-container {
-		height: 800px;
+		height: 715px;
 	}
 
 	/* Table Title */
@@ -1011,7 +1011,7 @@
 	}
 
 	.row-summary {
-        	height: 160px;
+        	height: 185px;
     	}
 	
 	/* Layer 2: Column Overlays */
@@ -1036,15 +1036,15 @@
 		display: flex;
 		align-items: center;
 		justify-content: center;
-		height: 745px;
+		height: 750px;
 	}
 
 	.table-two-column {
-    		height: 485px;
+    		height: 480px;
 	}
 
 	.table-three-column {
-    		height: 685px;
+    		height: 675px;
 	}
 	
 	.label-column {
@@ -1088,14 +1088,14 @@
 	.label-wrapper, .label-wrapper-summary {
 		display: flex;
 		align-items: center;
-		padding-left: 25px;
+		padding-left: 15px;
 		width: 255px;
 		height: 80px;
 		margin-bottom: 10px;
 	}
 
 	.label-wrapper-summary {
-		height: 160px;
+		height: 185px;
 	}
 	
 	.label-icon-wrapper {
@@ -1130,14 +1130,19 @@
 		font-size: 14px;
 	}
 	
-	.text {
+	.text, .text-summary {
 		text-align: center;
 		font-weight: 400;
 		font-size: 16px;
-		height: 70px;
+		height: 80px;
 		align-content: center;
 		padding: 10px 11px;
 		width: 232px;
+	}
+
+	.text-summary {
+		height: 185px;
+		align-content: flex-start;
 	}
 	
 	/* Tablet */
