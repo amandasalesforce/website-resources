@@ -1001,6 +1001,10 @@
 		background-color: #217c7c;
 		height: 80px;
 	}
+
+	.row-summary {
+        	height: 160px;
+    	}
 	
 	/* Layer 2: Column Overlays */
 	.column-layer {
