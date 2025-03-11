@@ -1308,7 +1308,7 @@
 		}
 	
 	/* Hide on mobile */
-	@media (max-width: 780px) {
+	@media (max-width: 768px) {
 	    	.comparison-container {
 	        	overflow: scroll;
 	    	}
