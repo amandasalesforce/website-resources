@@ -144,6 +144,11 @@
 }
     
 @media (max-width: 1024px) {
+	.HeroSection_sectionBackground {
+		padding-right: 3%;
+		padding-left: 3%;
+	}
+	
 	.HeroSection_sectionMedium {
 		max-width: 90%;
         }
@@ -157,6 +162,10 @@
 @media (max-width: 768px) {
     	.HeroSection_sectionSmall {
         	max-width: 90%;
+        }
+
+	.TableSection_sectionSmall {
+		max-width: 100%;
         }
 }
     
