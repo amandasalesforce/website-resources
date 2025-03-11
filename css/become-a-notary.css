@@ -1205,7 +1205,7 @@
 
 		/* Headers */
 		.row-header {
-			height: 80px;
+			height: 80px!important;
 		}
 
 		.table-one.text-header,
@@ -1306,8 +1306,119 @@
 	        	margin-right: unset;
 	    	}
 		}
-	
-	/* Hide on mobile */
+
+	/* Hide Icons on 860 screen */
+	@media (max-width: 860px) {
+		.comparison-table-html-1 .lwc-1nf8r8ii43j.cb-outputRichText-container {height: 750px;}
+
+		
+	    	.comparison-container {
+		        width: 665px;
+		        margin: 0 auto;
+		        display: flex;
+		        flex-direction: column;
+		        align-items: center;
+		        justify-content: center;
+	    	}
+
+	/* ----- Layer 1: Row Layer ----- */
+	    	.row-layer {
+        		width: 710px;
+        		margin: 0 auto;
+    		}
+
+		.table-one.row-layer {grid-template-rows: 80px 1fr 1fr 1fr 1fr 1fr 1fr 1fr;}
+		.table-two.row-layer {grid-template-rows: 80px 1fr 1fr 1fr 1fr;}
+		.table-three.row-layer {grid-template-rows: 80px 1fr 1fr 1fr 1fr 160px;}
+
+		/* Row 1 */
+		.row-header {
+        		height: 80px !important;
+    		}
+
+		.row {
+			margin-bottom: 6px;
+		}
+
+		/* Rows 2-8 */
+		.table-one.row {height: 85px;}
+		.table-two.row {height: 85px;}
+		.table-three.row {height: 85px;}
+
+	/* ----- Layer 2: Column Layer ----- */
+		.column-layer {
+        		width: 665px;
+        		grid-template-columns: 180px 165px 165px 155px;
+    		}
+
+		.table-one.column {height: 730px;}
+		.table-two.column {height: 730px;}
+		.table-three.column {height: 730px;}
+
+		/* Column 1 */
+		.label-column {
+        		width: 180px;
+        		margin: 0 auto;
+		}
+
+		/* Columns 2-4 */
+		.text-column {
+        		width: 155px;
+    		}
+
+	/* ----- Layer 3: Text Layer ----- */
+		.text-layer {
+        		width: 665px;
+        		grid-template-columns: 180px 165px 165px 155px;
+    		}
+
+		/* Header Row - Same Size for all Tables */
+		.label-header {
+        		width: 180px;
+        		height: 80px;
+    		}
+
+		.text-header {
+			width: 155px;
+        		height: 80px;
+        		font-size: 16px;
+        		padding: 15px 8px 0px;
+		}
+
+		/* Header Column - Width is same for all, Height is different */
+		.label-wrapper {
+        		padding-left: 15px;
+        		width: 180px;
+        		margin-bottom: 6px
+		}
+		
+	    	.label-icon-wrapper {
+        		display: none;
+ 		{
+
+		.label {
+        		font-size: 15px;
+		}
+
+		.table-one.label-wrapper {height: 85px}
+		.table-two.label-wrapper {height: 100px}
+		.table-three.label-wrapper {height: 100px}
+
+		/* Columns 2-3 */
+		.text {
+        		text-align: center;
+        		font-size: 14px;
+        		width: 155px;
+			padding: 8px;
+    		}
+
+		.table-one.text {height: 85px;}
+		.table-two.text {height: 85px;}
+		.table-three.text {height: 85px;}
+	        
+	}
+
+	/* Scroll on mobile */
 	@media (max-width: 768px) {
 	    	.comparison-container {
 	        	overflow: scroll;
