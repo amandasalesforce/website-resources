@@ -1034,9 +1034,9 @@
 	/* Layer 2: Column Overlays */
 	.column-layer {
 		display: grid;
-		grid-template-columns: 1fr 1fr 1fr 1fr;
+		grid-template-columns: 255px 245px 245px auto;;
 		position: absolute;
-		width: 1000px;
+		width: 1056px;
 		height: 100%;
 		z-index: 2;
 		top: 0;
@@ -1085,9 +1085,9 @@
 	/* Layer 3: Text Content */
 	.text-layer {
 		display: grid;
-		grid-template-columns: 1fr 1fr 1fr 1fr;
+		grid-template-columns: 255px 245px 245px auto;;
 		position: absolute;
-		width: 1000px;
+		width: 1056px;
 		height: 100%;
 		z-index: 3;
 		top: 0;
@@ -1107,6 +1107,10 @@
 		padding-left: 15px;
 		width: 255px;
 		margin-bottom: 10px;
+	}
+
+	.table-one.text-header.has-margin-right {
+    		width: 232px;
 	}
 
 	.label-wrapper-summary {
