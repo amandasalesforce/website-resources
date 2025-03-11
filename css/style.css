@@ -133,6 +133,13 @@
         overflow: clip;
 }
 
+.TableSection_sectionBackground {
+    width: 100%;
+    position: relative;
+    padding-right: 0;
+    padding-left: 0;
+}
+
 /* 2nd Inner Column General Attributes */
 .HeroSection_section {
         margin: auto;
