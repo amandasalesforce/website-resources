@@ -983,19 +983,20 @@
 		z-index: 1;
 	}
 	
-	.table-one.row-layer { grid-template-rows: 80px 1fr 1fr 1fr 1fr 1fr 1fr 1fr; }
+	.table-one.row-layer { grid-template-rows: 90px 1fr 1fr 1fr 1fr 1fr 1fr 1fr; }
 	.table-two.row-layer { grid-template-rows: 80px 1fr 1fr 1fr 1fr; }
 	.table-three.row-layer { grid-template-rows: 80px 1fr 1fr 1fr 1fr 1fr; }
 
      /* Row 1 */
 	.row-header {
 		background-color: unset;
-		height: 80px
+		height: 90px
 	}
 
      /* Rows 2-8 */
 	.row {
 		background-color: #217c7c;
+		margin-bottom: 10px;
 	}
 
 	.table-one.row { height: 80px; }
@@ -1003,13 +1004,13 @@
 	.table-three.row { height: 80px; }
 	
 	.table-three.row.row-summary {
-        	height: 185px!important;
+        	height: 185px;
     	}
 	
 /* ----- Layer 2: Column Layer ----- */
 	.column-layer {
 		display: grid;
-		grid-template-columns: 255px 245px 245px auto;;
+		grid-template-columns: 270px 245px 245px auto;
 		position: absolute;
 		width: 1056px;
 		height: 100%;
@@ -1053,24 +1054,22 @@
 /* ----- Layer 3: Text Layer ----- */
 	.text-layer {
 		display: grid;
-		grid-template-columns: 255px 245px 245px auto;
+		grid-template-columns: 270px 245px 245px auto;
 		position: absolute;
 		width: 1056px;
 		height: 100%;
 		z-index: 3;
 		top: 0;
-		left: 50%;
-		transform: translateX(-50%);
 	}
 
-	.table-one.text-layer { grid-template-rows: .75fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr; }
-	.table-two.text-layer { grid-template-rows: .75fr 1fr 1fr 1fr 1fr; }
-	.table-three.text-layer { grid-template-rows: .75fr 1fr 1fr 1fr 1fr; }
+	.table-one.text-layer { grid-template-rows: 90px 1fr 1fr 1fr 1fr 1fr 1fr 1fr; }
+	.table-two.text-layer { grid-template-rows: 80px 1fr 1fr 1fr 1fr; }
+	.table-three.text-layer { grid-template-rows: 80px 1fr 1fr 1fr 1fr 1fr; }
 
      /* Header Row - Same Size for all Tables */
 	.label-header {
-		width: 225px;
-		height: 80px;
+		width: 270px;
+		height: 90px;
 	}
 
 	.text-header {
@@ -1096,8 +1095,8 @@
 	.label-wrapper-summary {
 		display: flex;
 		align-items: center;
-		padding-left: 15px;
-		width: 255px;
+		padding-left: 25px;
+		width: 270px;
 		margin-bottom: 10px;
 	}
 
@@ -1143,7 +1142,7 @@
 	.table-three.text { height: 80px; }
 
 	.text-summary {
-		185px!important
+		width: 185px;
 		align-content: flex-start;
 	}
 	
