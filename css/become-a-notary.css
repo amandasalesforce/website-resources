@@ -959,7 +959,7 @@
 	}
 
 	.comparison-table-html-2 .lwc-1nf8r8ii43j.cb-outputRichText-container {
-		height: 510px;
+		height: 585px;
 	}
 
 	.comparison-table-html-3 .lwc-1nf8r8ii43j.cb-outputRichText-container {
@@ -1019,7 +1019,7 @@
 	}
 
 	.table-two.row, .table-two.text, .table-two.label-wrapper {
-    		height: 90px;
+    		height: 100px;
     		margin-bottom: 10px;
 	}
 
@@ -1028,7 +1028,7 @@
 	}
 
 	.row-summary {
-        	height: 185px;
+        	height: 185px!important;
     	}
 	
 	/* Layer 2: Column Overlays */
@@ -1057,7 +1057,7 @@
 	}
 
 	.table-two.column {
-    		height: 480px;
+    		height: 560px;
 	}
 
 	.table-three.column {
@@ -1066,7 +1066,7 @@
 	
 	.label-column {
 	    	background-color: unset;
-	    	width: 280px;
+	    	width: 255px;
 	}
 	
 	.text-column {
@@ -1127,18 +1127,13 @@
 		color: #57a9a4;
 	}
 	
-	.text-header.label-header {
-		width: 280px;
-		padding: 0px;
-		height: 90px;
-	}
-	
 	.text-header {
 		height: 90px;
 		font-size: 22px;
 		font-weight: 500;
 		align-content: flex-start;
 		padding: 20px 11px 0px;
+		text-align: center;
 	}
 	
 	.text-header span {
@@ -1149,7 +1144,9 @@
 		font-size: 14px;
 	}
 
-
+	.table-one.text-header {
+    		width: 232px;
+	}
 
 	.text, .text-summary {
 		text-align: center;
@@ -1161,8 +1158,12 @@
 	}
 
 	.text-summary {
-		height: 185px;
+		185px!important
 		align-content: flex-start;
+	}
+
+	.table-one.text {
+	    height: 80px;
 	}
 	
 	/* Tablet */
