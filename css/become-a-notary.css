@@ -1405,7 +1405,9 @@
 		.table-three.label-wrapper {height: 100px}
 
 		/* Columns 2-3 */
-		.text {
+		.table-one.text,
+		.table-two.text,
+		.table-three.text {
         		text-align: center;
         		font-size: 14px;
         		width: 165px;
