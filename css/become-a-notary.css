@@ -1010,15 +1010,12 @@
 /* ----- Layer 2: Column Layer ----- */
 	.column-layer {
 		display: grid;
-		grid-template-columns: 270px 245px 245px auto;
+		grid-template-columns: 250px 245px 245px auto;
 		position: absolute;
 		width: 1056px;
 		height: 100%;
 		z-index: 2;
 		top: 0;
-		max-width: 1056px;
-		left: 50%;
-		transform: translateX(-50%);
 	}
 	
 	.column.text-column {
@@ -1054,7 +1051,7 @@
 /* ----- Layer 3: Text Layer ----- */
 	.text-layer {
 		display: grid;
-		grid-template-columns: 270px 245px 245px auto;
+		grid-template-columns: 250px 245px 245px auto;
 		position: absolute;
 		width: 1056px;
 		height: 100%;
@@ -1068,7 +1065,7 @@
 
      /* Header Row - Same Size for all Tables */
 	.label-header {
-		width: 270px;
+		width: 250px;
 		height: 90px;
 	}
 
@@ -1096,7 +1093,7 @@
 		display: flex;
 		align-items: center;
 		padding-left: 25px;
-		width: 270px;
+		width: 250px;
 		margin-bottom: 10px;
 	}
 
@@ -1109,19 +1106,19 @@
 	.table-three.label-wrapper { height: 80px; }
 
 	.label-icon-wrapper {
-		width: 35px;
+		width: 30px;
 		text-align: left;
 	}
 	
 	i#label-icon {
-		font-size: 22px;
+		font-size: 19px;
 		color: #57a9a4;
 	}
 			
 	.label {
 		color: white;
 		font-weight: 400;
-		font-size: 18px;
+		font-size: 17px;
 	}
 
      /* Columns 2-3 */
