@@ -1179,7 +1179,7 @@
 		}
 		
 		.comparison-container {
-			width: 760px; /* Ensures proper width */
+			width: 710px; /* Ensures proper width */
 			margin: 0 auto; /* Centers it horizontally */
 			display: flex;
 			flex-direction: column;
