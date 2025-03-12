@@ -1396,7 +1396,7 @@
 		
 	    	.label-icon-wrapper {
         		display: none;
- 		{
+		}
 
 		.label {
         		font-size: 15px;
@@ -1407,7 +1407,9 @@
 		.table-three.label-wrapper { height: 100px }
 
 		/* Columns 2-4 */
-		.text {
+		.table-one.text,
+		.table-two.text,
+		.table-three.text {
         		font-size: 14px;
         		width: 165px;
 			padding: 8px;
