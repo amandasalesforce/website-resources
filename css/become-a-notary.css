@@ -1153,147 +1153,20 @@
 	
 /* ====== Tablet ===== */
 	@media (max-width: 1025px) {
-		.comparison-table-html-1 .lwc-1nf8r8ii43j.cb-outputRichText-container {
-			height: 800px;
-		}
-	
-		.comparison-table-html-2 .lwc-1nf8r8ii43j.cb-outputRichText-container {
-			height: 510px;
-		}
-	
-		.comparison-table-html-3 .lwc-1nf8r8ii43j.cb-outputRichText-container {
-			height: 715px;
-		}
-		
-		.comparison-container {
-			width: 710px; /* Ensures proper width */
-			margin: 0 auto; /* Centers it horizontally */
-			display: flex;
-			flex-direction: column;
-			align-items: center;
-			justify-content: center;
-		}
+		/* Component Height */
+		.comparison-table-html-1 .lwc-1nf8r8ii43j.cb-outputRichText-container { height: 775px; }
+		.comparison-table-html-2 .lwc-1nf8r8ii43j.cb-outputRichText-container { height: 585px; }
+		.comparison-table-html-3 .lwc-1nf8r8ii43j.cb-outputRichText-container { height: 700px; }
 
-		/* Layers */
-		.row-layer {
-			width: 710px; /* Matches container width */
-			margin: 0 auto;
-		}
 
-		.column-layer {
-			width: 710px;
-			grid-template-columns: 225px 160px 160px auto;
-	    	}
 
-		.text-layer {
-			width: 710px;
-			grid-template-columns: 225px 160px 160px auto;
-	    	}
 
-		/* Headers */
-		.row-header {
-			height: 80px!important;
-		}
-
-		.table-one.text-header,
-		.table-two.text-header,
-		.table-three.text-header {
-    			width: 150px;
-			height: 80px;
-	        	font-size: 16px;
-			padding: 15px 8px 0px;
-		}
-	
-	    	.text-header span {
-	        	font-size: 12px;
-	    	}
-
-		
-
-		.label-header {
-		        width: 225px;
-		        height: 80px;
-		}
 
 
 
 		
-
-		/* Body */
-		.label-column {
-		        width: 225px;
-		        margin: 0 auto;
-	    	}
-		
-		table-one.row, table-one.text {
-	        	height: 110px;
-			margin-bottom: 6px;
-	    	}
-
-		table-two.row, table-two.text {
-	        	height: 110px;
-			margin-bottom: 6px;
-	    	}
-
-		table-three.row, table-three.text {
-	        	height: 110px;
-			margin-bottom: 6px;
-	    	}
-
-		
-
-		.text {
-		        text-align: center;
-		        font-size: 14px;
-		        width: 170px;
-	    	}
-
-		.text-column {
-			width: 150px;
-		}
-
-		table-one.text-column {
-			height: 810px;
-	    	}
-
-		table-two.text-column {
-			height: 810px;
-	    	}
-
-		table-three.text-column {
-			height: 810px;
-	    	}
-	
-	
-		.table-one.label-wrapper {
-			height: 90px;
-		}
-
-		
-	
-		.label-wrapper {
-		        padding-left: 15px;
-			width: 225px;
-	        	margin-bottom: 6px;
-	    	}
-	
-		.label-icon-wrapper {
-			width: 30px;
-		}
-	
-	    	i#label-icon {
-	        	font-size: 20px;
-	    	}
-	
-	    	.label {
-	        	font-size: 16px;
-	    	}
-	
-	    	.has-margin-right {
-	        	margin-right: unset;
-	    	}
 	}
-
+		
 	/* Hide Icons on 860 screen */
 	@media (max-width: 860px) {
 		.comparison-table-html-1 .lwc-1nf8r8ii43j.cb-outputRichText-container {
