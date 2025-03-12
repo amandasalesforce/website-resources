@@ -1099,7 +1099,7 @@
 	}
 
 	.label-wrapper-summary {
-		height: 185px;
+		height: 80px;
 	}
 
 	.table-one.label-wrapper { height: 80px; }
@@ -1300,15 +1300,13 @@
 		    font-size: 14px;
 		    width: 185px;
 		}
-
-		
 	}
 		
 	/* Hide Icons on 860 screen */
 	@media (max-width: 860px) {
-		.comparison-table-html-1 .lwc-1nf8r8ii43j.cb-outputRichText-container {
-			height: 810px;
-		}
+		.comparison-table-html-1 .lwc-1nf8r8ii43j.cb-outputRichText-container { height: 810px; }
+		.comparison-table-html-2 .lwc-1nf8r8ii43j.cb-outputRichText-container { height: 612px; }
+		.comparison-table-html-3 .lwc-1nf8r8ii43j.cb-outputRichText-container { height: 713px; }
 
 		
 	    	.comparison-container {
@@ -1332,7 +1330,7 @@
 
 		/* Row 1 */
 		.row-header {
-        		height: 80px !important;
+        		height: 80px;
     		}
 
 		/* Rows 2-8 */
@@ -1340,9 +1338,9 @@
 			margin-bottom: 6px;
 		}
 		
-		.table-one.row {height: 90px;}
-		.table-two.row {height: 85px;}
-		.table-three.row {height: 85px;}
+		.table-one.row { height: 90px; }
+		.table-two.row { height: 85px; }
+		.table-three.row { height: 85px; }
 
 	/* ----- Layer 2: Column Layer ----- */
 		.column-layer {
@@ -1350,17 +1348,9 @@
         		grid-template-columns: 180px 175px 175px 165px;
     		}
 
-		.table-one.column {
-			height: 790px;
-		}
-		
-		.table-two.column {
-			height: 730px;
-		}
-		
-		.table-three.column {
-			height: 730px;
-		}
+		.table-one.column { height: 790px; }
+		.table-two.column { height: 730px; }
+		.table-three.column { height: 730px; }
 
 		/* Column 1 */
 		.label-column {
@@ -1386,10 +1376,10 @@
     		}
 
 		.text-header {
-			width: 165px!important;
-        		height: 80px!important;
-        		font-size: 16px!important;
-        		padding: 15px 8px 0px!important;
+			width: 165px;
+        		height: 80px;
+        		font-size: 16px;
+        		padding: 15px 8px 0px;
 		}
 
 		/* Header Column - Width is same for all, Height is different */
@@ -1407,39 +1397,23 @@
         		font-size: 15px;
 		}
 
-		.table-one.label-wrapper {
-			height: 90px
-		}
-			
-		.table-two.label-wrapper {
-			height: 100px
-		}
-			
-		.table-three.label-wrapper {
-			height: 100px
-		}
+		.table-one.label-wrapper { height: 90px }	
+		.table-two.label-wrapper { height: 100px }
+		.table-three.label-wrapper { height: 100px }
 
 		/* Columns 2-3 */
 		.table-one.text,
 		.table-two.text,
 		.table-three.text {
-        		text-align: center!important;
+        		text-align: center;
         		font-size: 14px!important;
-        		width: 165px!important;
-			padding: 8px!important;
+        		width: 165px;
+			padding: 8px;
     		}
 
-		.table-one.text {
-			height: 90px!important;
-		}
-		
-		.table-two.text {
-			height: 85px!important;
-		}
-		
-		.table-three.text {
-			height: 85px!important;
-		}
+		.table-one.text { height: 90px!important; }
+		.table-two.text { height: 85px!important; }
+		.table-three.text { height: 85px!important; }
 	        
 	}
 
