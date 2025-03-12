@@ -1283,7 +1283,7 @@
 			font-size: 15px;
 		}
 
-	     /* Columns 2-3 */
+	     /* Columns 2-4 */
 		.table-one.text,
 		.table-two.text,
 		.table-three.text {
@@ -1382,6 +1382,10 @@
         		padding: 15px 8px 0px;
 		}
 
+		.text-header.sub-header {
+ 			width: 149px;
+		}
+
 		/* Header Column - Width is same for all, Height is different */
 		.label-wrapper {
         		padding-left: 15px;
@@ -1401,19 +1405,19 @@
 		.table-two.label-wrapper { height: 100px }
 		.table-three.label-wrapper { height: 100px }
 
-		/* Columns 2-3 */
+		/* Columns 2-4 */
 		.table-one.text,
 		.table-two.text,
 		.table-three.text {
         		text-align: center;
-        		font-size: 14px!important;
+        		font-size: 14px;
         		width: 165px;
 			padding: 8px;
     		}
 
-		.table-one.text { height: 90px!important; }
-		.table-two.text { height: 85px!important; }
-		.table-three.text { height: 85px!important; }
+		.table-one.text { height: 90px; }
+		.table-two.text { height: 85px; }
+		.table-three.text { height: 85px; }
 	        
 	}
 
