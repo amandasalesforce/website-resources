@@ -967,12 +967,19 @@
 	}
 
      /* Container */
-	.comparison-container {
+	.comparison-container,
+	.comparison-container-one,
+	.comparison-container-two,
+	.comparison-container-three {
 		position: relative;
 		width: 1056px;
 		margin: auto;
 		font-family: Xfinity Standard;
 	}
+
+	.comparison-container-one { height: 775px; }
+	.comparison-container-two { height: 585px; }
+	.comparison-container-three { height: 700px; }
 
 /* ----- Layer 1: Row Layer ----- */
 	.row-layer {
