@@ -1085,6 +1085,8 @@
 		display: inline-block;
 		padding: 0;
 		margin: 0;
+		height: fit-content;
+    		width: 210px;
 	}
 
      /* Header Column - Width is same for all, Height is different */
@@ -1138,7 +1140,7 @@
 
 	.table-three.text.text-summary {
 	    height: 185px;
-	    align-content: flex-start;
+	    align-content: flex-start!important;
 	    text-align: center;
 	    font-weight: 400;
 	    font-size: 16px;
@@ -1258,7 +1260,7 @@
 		.label-wrapper-summary {
 			padding-left: 15px;
     			width: 210px;
-    			margin-bottom: 10px;
+    			margin-bottom: 6px;
 		}
 
 		.label-wrapper-summary {
