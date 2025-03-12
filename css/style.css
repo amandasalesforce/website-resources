@@ -182,6 +182,13 @@
         position: relative;
         align-items: stretch;
 }
+
+.TableSection_container {
+        display: flex;
+        position: relative;
+        align-items: stretch;
+	flex-direction: column;
+}
     
 /* Content */
 .HeroSection_content {
