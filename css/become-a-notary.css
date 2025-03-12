@@ -973,7 +973,7 @@
 		margin: auto;
 		font-family: Xfinity Standard;
 	}
-	
+
 /* ----- Layer 1: Row Layer ----- */
 	.row-layer {
 		display: grid;
@@ -1017,7 +1017,14 @@
 		z-index: 2;
 		top: 0;
 	}
-	
+
+     /* Column 1 */
+	.label-column {
+	    	background-color: unset;
+	    	width: 250px;
+	}
+
+     /* Columns 2-4 */
 	.column.text-column {
 		background-color: rgba(143, 210, 205, 0.5);
 		text-align: center;
@@ -1032,13 +1039,6 @@
 	.table-two.column { height: 560px; }
 	.table-three.column { height: 675px; }
 
-     /* Column 1 */
-	.label-column {
-	    	background-color: unset;
-	    	width: 250px;
-	}
-
-     /* Columns 2-4 */
 	.text-column {
 		width: 232px;
 	}
@@ -1079,12 +1079,12 @@
 		width: 232px;
 	}
 	
-	.text-header span {
+	.text-header.sub-header {
+		font-size: 14px;
 		line-height: 1;
 		display: inline-block;
 		padding: 0;
 		margin: 0;
-		font-size: 14px;
 	}
 
      /* Header Column - Width is same for all, Height is different */
@@ -1094,7 +1094,6 @@
 		align-items: center;
 		padding-left: 25px;
 		width: 250px;
-		margin-bottom: 10px;
 	}
 
 	.label-wrapper-summary {
@@ -1154,15 +1153,151 @@
 /* ====== Tablet ===== */
 	@media (max-width: 1025px) {
 		/* Component Height */
-		.comparison-table-html-1 .lwc-1nf8r8ii43j.cb-outputRichText-container { height: 775px; }
-		.comparison-table-html-2 .lwc-1nf8r8ii43j.cb-outputRichText-container { height: 585px; }
-		.comparison-table-html-3 .lwc-1nf8r8ii43j.cb-outputRichText-container { height: 700px; }
+		.comparison-table-html-1 .lwc-1nf8r8ii43j.cb-outputRichText-container { height: 790px; }
+		.comparison-table-html-2 .lwc-1nf8r8ii43j.cb-outputRichText-container { height: 592px; }
+		.comparison-table-html-3 .lwc-1nf8r8ii43j.cb-outputRichText-container { height: 693px; }
+		
+	     /* Container */
+		.comparison-container {
+			width: 826px;
+		}
+     
+	/* ----- Layer 1: Row Layer ----- */
+		.row-layer {    
+			width: 826px;
+		}
 
+		.table-one.row-layer {grid-template-rows: 80px 1fr 1fr 1fr 1fr 1fr 1fr 1fr;}
+		.table-two.row-layer {grid-template-rows: 80px 1fr 1fr 1fr 1fr;}	
+		.table-three.row-layer {grid-template-rows: 80px 1fr 1fr 1fr 1fr 185px;}
 
+		
+	     /* Row 1 */
+		.row-header {
+			height: 80px
+		}
 
+	     /* Rows 2-8 */
+		.row {
+			margin-bottom: 6px;
+		}
 
+		.table-one.row { height: 90px; }
+		.table-two.row { height: 110px; }
+		.table-three.row { height: 90px; }
+		
+		.table-three.row.row-summary {
+	        	height: 185px;
+	    	}
 
+	/* ----- Layer 2: Column Layer ----- */
+		.column-layer {
+			grid-template-columns: 210px 195px 195px 195px;
+			width: 826px;
+		}
 
+	     /* Column 1 */
+		.label-column {
+		    	width: 210px;
+		}
+	
+	     /* Columns 2-4 */
+		.column.text-column {
+			background-color: rgba(143, 210, 205, 0.5);
+			text-align: center;
+			font-size: 18px;
+			border-radius: 8px;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+		}
+	
+		.table-one.column { height: 770px; }
+		.table-two.column { height: 572px; }
+		.table-three.column { height: 673px; }
+	
+		.text-column {
+			width: 185px;
+		}
+	
+		.blank-text-column {
+			width: 185px;
+		}
+		
+	/* ----- Layer 3: Text Layer ----- */
+		.text-layer {
+			width: 826px;
+			grid-template-columns: 210px 195px 195px 195px;
+		}
+
+		.table-one.text-layer { grid-template-rows: 80px 1fr 1fr 1fr 1fr 1fr 1fr 1fr; }
+		.table-two.text-layer { grid-template-rows: 80px 1fr 1fr 1fr 1fr; }
+		.table-three.text-layer { grid-template-rows: 80px 1fr 1fr 1fr 1fr 185px; }
+	
+	     /* Header Row - Same Size for all Tables */
+		.label-header {
+			width: 210px;
+			height: 80px;
+		}
+
+		.text-header {
+			width: 185px;
+			height: 80px;
+			font-size: 18px;
+			padding: 15px 8px 0px;
+		}
+
+		.text-header.sub-header {
+    			font-size: 12px;
+			height: fit-content;
+ 			width: 165px;
+		}
+
+	     /* Header Column - Width is same for all, Height is different */
+		.label-wrapper,
+		.label-wrapper-summary {
+			padding-left: 15px;
+    			width: 210px;
+    			margin-bottom: 10px;
+		}
+
+		.label-wrapper-summary {
+			height: 90px;
+		}
+	
+		.table-one.label-wrapper { height: 90px; }
+		.table-two.label-wrapper { height: 110px; }
+		.table-three.label-wrapper { height: 90px; }
+	
+		.label-icon-wrapper {
+			width: 25px;
+		}
+		
+		i#label-icon {
+			font-size: 17px;
+		}
+				
+		.label {
+			font-size: 15px;
+		}
+
+	     /* Columns 2-3 */
+		.table-one.text,
+		.table-two.text,
+		.table-three.text {
+			font-size: 14px;
+			width: 185px;
+		}
+
+		.table-one.text { height: 90px; }
+		.table-two.text { height: 110px; }
+		.table-three.text { height: 90px; }
+	
+		.table-three.text.text-summary {
+		    height: 185px;
+		    font-size: 14px;
+		    width: 185px;
+		}
 
 		
 	}
