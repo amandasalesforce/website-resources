@@ -984,8 +984,8 @@
 	}
 	
 	.table-one.row-layer { grid-template-rows: 90px 1fr 1fr 1fr 1fr 1fr 1fr 1fr; }
-	.table-two.row-layer { grid-template-rows: 80px 1fr 1fr 1fr 1fr; }
-	.table-three.row-layer { grid-template-rows: 80px 1fr 1fr 1fr 1fr 1fr; }
+	.table-two.row-layer { grid-template-rows: 90px 1fr 1fr 1fr 1fr; }
+	.table-three.row-layer { grid-template-rows: 90px 1fr 1fr 1fr 1fr 185px; }
 
      /* Row 1 */
 	.row-header {
@@ -1035,7 +1035,7 @@
      /* Column 1 */
 	.label-column {
 	    	background-color: unset;
-	    	width: 255px;
+	    	width: 250px;
 	}
 
      /* Columns 2-4 */
@@ -1060,8 +1060,8 @@
 	}
 
 	.table-one.text-layer { grid-template-rows: 90px 1fr 1fr 1fr 1fr 1fr 1fr 1fr; }
-	.table-two.text-layer { grid-template-rows: 80px 1fr 1fr 1fr 1fr; }
-	.table-three.text-layer { grid-template-rows: 80px 1fr 1fr 1fr 1fr 1fr; }
+	.table-two.text-layer { grid-template-rows: 90px 1fr 1fr 1fr 1fr; }
+	.table-three.text-layer { grid-template-rows: 90px 1fr 1fr 1fr 1fr 185px; }
 
      /* Header Row - Same Size for all Tables */
 	.label-header {
@@ -1124,8 +1124,7 @@
      /* Columns 2-3 */
 	.table-one.text,
 	.table-two.text,
-	.table-three.text,
-	.text-summary {
+	.table-three.text {
 		text-align: center;
 		font-weight: 400;
 		font-size: 16px;
@@ -1138,9 +1137,15 @@
 	.table-two.text { height: 100px; }
 	.table-three.text { height: 80px; }
 
-	.text-summary {
-		width: 185px;
-		align-content: flex-start;
+	.table-three.text.text-summary {
+	    height: 185px;
+	    align-content: flex-start;
+	    text-align: center;
+	    font-weight: 400;
+	    font-size: 16px;
+	    align-content: center;
+	    padding: 10px 11px;
+	    width: 232px;
 	}
 	
 
