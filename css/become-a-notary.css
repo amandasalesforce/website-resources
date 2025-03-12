@@ -1305,8 +1305,8 @@
 		
 	/* Hide Icons on 860 screen */
 	@media (max-width: 860px) {
-		.comparison-table-html-1 .lwc-1nf8r8ii43j.cb-outputRichText-container { height: 810px; }
-		.comparison-table-html-2 .lwc-1nf8r8ii43j.cb-outputRichText-container { height: 612px; }
+		.comparison-table-html-1 .lwc-1nf8r8ii43j.cb-outputRichText-container { height: 790px; }
+		.comparison-table-html-2 .lwc-1nf8r8ii43j.cb-outputRichText-container { height: 562px; }
 		.comparison-table-html-3 .lwc-1nf8r8ii43j.cb-outputRichText-container { height: 713px; }
 
 		
@@ -1327,7 +1327,7 @@
 
 		.table-one.row-layer {grid-template-rows: 80px 1fr 1fr 1fr 1fr 1fr 1fr 1fr;}
 		.table-two.row-layer {grid-template-rows: 80px 1fr 1fr 1fr 1fr;}	
-		.table-three.row-layer {grid-template-rows: 80px 1fr 1fr 1fr 1fr 160px;}
+		.table-three.row-layer {grid-template-rows: 80px 1fr 1fr 1fr 1fr 200px;}
 
 		/* Row 1 */
 		.row-header {
@@ -1340,8 +1340,12 @@
 		}
 		
 		.table-one.row { height: 90px; }
-		.table-two.row { height: 85px; }
+		.table-two.row { height: 105px; }
 		.table-three.row { height: 85px; }
+
+		.table-three.row.row-summary {
+	        	height: 200px;
+	    	}
 
 	/* ----- Layer 2: Column Layer ----- */
 		.column-layer {
@@ -1349,8 +1353,8 @@
         		grid-template-columns: 180px 175px 175px 165px;
     		}
 
-		.table-one.column { height: 790px; }
-		.table-two.column { height: 730px; }
+		.table-one.column { height: 770px; }
+		.table-two.column { height: 542px; }
 		.table-three.column { height: 730px; }
 
 		/* Column 1 */
@@ -1369,6 +1373,10 @@
         		width: 695px;
         		grid-template-columns: 180px 175px 175px 165px;
     		}
+
+		.table-one.text-layer {grid-template-rows: 80px 1fr 1fr 1fr 1fr 1fr 1fr 1fr;}
+		.table-two.text-layer {grid-template-rows: 80px 1fr 1fr 1fr 1fr;}	
+		.table-three.text-layer {grid-template-rows: 80px 1fr 1fr 1fr 1fr 200px;}
 
 		/* Header Row - Same Size for all Tables */
 		.label-header {
@@ -1403,8 +1411,8 @@
 		}
 
 		.table-one.label-wrapper { height: 90px }	
-		.table-two.label-wrapper { height: 100px }
-		.table-three.label-wrapper { height: 100px }
+		.table-two.label-wrapper { height: 105px }
+		.table-three.label-wrapper { height: 85px }
 
 		/* Columns 2-4 */
 		.table-one.text,
@@ -1416,8 +1424,14 @@
     		}
 
 		.table-one.text { height: 90px; }
-		.table-two.text { height: 85px; }
+		.table-two.text { height: 105px; }
 		.table-three.text { height: 85px; }
+
+		.table-three.text.text-summary {
+		    height: 200px;
+		    font-size: 14px;
+		    width: 165px;
+		}
 	        
 	}
 
