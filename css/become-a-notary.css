@@ -1288,6 +1288,7 @@
 		.table-two.text,
 		.table-three.text {
 			font-size: 14px;
+			padding: 10px 11px;
 			width: 185px;
 		}
 
@@ -1409,7 +1410,6 @@
 		.table-one.text,
 		.table-two.text,
 		.table-three.text {
-        		text-align: center;
         		font-size: 14px;
         		width: 165px;
 			padding: 8px;
