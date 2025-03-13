@@ -49,7 +49,8 @@ document.addEventListener("DOMContentLoaded", function () {
             const sectionTop = rect.top + window.scrollY - offset; 
             const sectionBottom = sectionTop + section.offsetHeight;
 
-            if (scrollPosition >= sectionTop && scrollPosition < sectionBottom) {
+            // Adjust the condition to ensure only one section is active at a time
+            if (scrollPosition >= sectionTop && scrollPosition < sectionBottom - 1) { 
                 activeSection = section.id;
             }
         });
