@@ -185,7 +185,7 @@
         margin-bottom: 0px;
         min-width: 0px;
         max-width: 100%;
-        background: #e9f7ee;
+        background: #eaf7f6;
         padding: 8px;
         border-radius: 20px;
         height: 100%;
@@ -201,7 +201,7 @@
     }
     
     #services_greenIcon {
-        color: #30856d;
+        color: #217c7c;
     }
     
     .services_greenColumn:hover {
@@ -214,7 +214,7 @@
     }
     
     .services_greenColumn:hover #services_greenArrow {
-        color: #30856d;
+        color: #bedfdd;
         transition: color .3s, transform .3s;
     }
 
