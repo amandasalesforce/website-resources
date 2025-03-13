@@ -37,8 +37,9 @@ document.addEventListener("DOMContentLoaded", function () {
         const isSticky = document.querySelector(".sticky-menuWrapper").classList.contains("sticky");
 
         sections.forEach((section) => {
-            const offset = isSticky ? 250 : 0; // If sticky, section is active at 250px; otherwise, at the top
-            const sectionTop = section.offsetTop - offset;
+            const rect = section.getBoundingClientRect();
+            const offset = isSticky ? 250 : 0; // Adjust when sticky
+            const sectionTop = rect.top + window.scrollY - offset; 
             const sectionBottom = sectionTop + section.offsetHeight;
 
             if (scrollPosition >= sectionTop && scrollPosition < sectionBottom) {
@@ -61,7 +62,6 @@ document.addEventListener("DOMContentLoaded", function () {
                 const activeButton = activeLink.querySelector(".sticky-menuButton");
                 if (activeButton) {
                     activeButton.classList.add("active");
-                    console.log(`✅ Active Button: ${activeButton.innerText}`);
                 }
             }
         }
@@ -75,15 +75,20 @@ document.addEventListener("DOMContentLoaded", function () {
             const targetSection = document.getElementById(targetId);
             
             if (targetSection) {
-                const targetPosition = targetSection.offsetTop; // Align section exactly at the top
+                const isSticky = document.querySelector(".sticky-menuWrapper").classList.contains("sticky");
+                const offset = isSticky ? 250 : 0;
+
+                const targetPosition = targetSection.offsetTop - offset;
 
                 window.scrollTo({
                     top: targetPosition,
                     behavior: "smooth"
                 });
 
-                // Delay active class update to ensure correct section is detected
-                setTimeout(highlightMenu, 300);
+                // Wait for scroll animation to finish before updating active button
+                setTimeout(() => {
+                    highlightMenu();
+                }, 500); // Adjust timing if needed
             }
         });
     });
