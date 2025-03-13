@@ -98,6 +98,7 @@ document.addEventListener("DOMContentLoaded", function () {
                 setTimeout(() => {
                     preventHighlight = false;
                     highlightMenu(); // Re-run the highlight logic used during scrolling
+                    window.dispatchEvent(new Event("scroll"));
                 }, 700); // Adjust delay as needed
             }
         });
