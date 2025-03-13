@@ -76,9 +76,9 @@ document.addEventListener("DOMContentLoaded", function () {
             
             if (targetSection) {
                 const isSticky = document.querySelector(".sticky-menuWrapper").classList.contains("sticky");
-                const offset = isSticky ? 250 : 0;
+                const offset = isSticky ? 250 : 0; // Match the logic used for scroll detection
 
-                const targetPosition = targetSection.offsetTop - offset;
+                const targetPosition = targetSection.getBoundingClientRect().top + window.scrollY - offset;
 
                 window.scrollTo({
                     top: targetPosition,
