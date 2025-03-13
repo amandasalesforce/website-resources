@@ -33,12 +33,14 @@ document.addEventListener("DOMContentLoaded", function () {
     function highlightMenu() {
         let scrollPosition = window.scrollY || document.documentElement.scrollTop;
         let activeSection = null;
+        
+        const isSticky = document.querySelector(".sticky-menuWrapper").classList.contains("sticky");
 
         sections.forEach((section) => {
-            const sectionTop = section.offsetTop;
+            const offset = isSticky ? 250 : 0; // If sticky, section is active at 250px; otherwise, at the top
+            const sectionTop = section.offsetTop - offset;
             const sectionBottom = sectionTop + section.offsetHeight;
 
-            // Consider a section active only when it reaches the top of the screen
             if (scrollPosition >= sectionTop && scrollPosition < sectionBottom) {
                 activeSection = section.id;
             }
