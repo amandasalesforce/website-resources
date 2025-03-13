@@ -67,6 +67,30 @@ document.addEventListener("DOMContentLoaded", function () {
         }
     }
 
+    menuLinks.forEach((link) => {
+        link.addEventListener("click", function (event) {
+            event.preventDefault();
+            
+            const targetId = this.getAttribute("href").substring(1);
+            const targetSection = document.getElementById(targetId);
+            
+            if (targetSection) {
+                const isSticky = document.querySelector(".sticky-menuWrapper").classList.contains("sticky");
+                const offset = isSticky ? 250 : 0; // Ensure proper offset when scrolling
+                
+                const targetPosition = targetSection.offsetTop - offset;
+                
+                window.scrollTo({
+                    top: targetPosition,
+                    behavior: "smooth"
+                });
+
+                // Delay active class update to ensure correct section is detected
+                setTimeout(highlightMenu, 300);
+            }
+        });
+    });
+
     window.addEventListener("scroll", function () {
         checkSticky();
         highlightMenu();
