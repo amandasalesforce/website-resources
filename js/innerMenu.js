@@ -85,10 +85,23 @@ document.addEventListener("DOMContentLoaded", function () {
                     behavior: "smooth"
                 });
 
-                // Wait for scroll animation to finish before updating active button
+                // Set active state on the clicked button immediately
+                menuLinks.forEach((link) => {
+                    const button = link.querySelector(".sticky-menuButton");
+                    if (button) {
+                        button.classList.remove("active");
+                    }
+                });
+
+                const activeButton = this.querySelector(".sticky-menuButton");
+                if (activeButton) {
+                    activeButton.classList.add("active");
+                }
+
+                // Wait for scroll animation to finish before updating active button (for accuracy)
                 setTimeout(() => {
                     highlightMenu();
-                }, 500); // Adjust timing if needed
+                }, 500);
             }
         });
     });
