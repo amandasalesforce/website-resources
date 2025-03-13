@@ -12,6 +12,8 @@ document.addEventListener("DOMContentLoaded", function () {
     placeholder.style.width = menu.offsetWidth + "px"; 
     placeholder.style.height = menu.offsetHeight + "px"; 
 
+    let preventHighlight = false; // Added flag
+
     function checkSticky() {
         const scrollOffset = window.scrollY || document.documentElement.scrollTop;
 
@@ -31,6 +33,8 @@ document.addEventListener("DOMContentLoaded", function () {
     }
 
     function highlightMenu() {
+        if (preventHighlight) return; // Prevent immediate highlight override
+
         let scrollPosition = window.scrollY || document.documentElement.scrollTop;
         let activeSection = null;
         
@@ -85,23 +89,14 @@ document.addEventListener("DOMContentLoaded", function () {
                     behavior: "smooth"
                 });
 
-                // Set active state on the clicked button immediately
-                menuLinks.forEach((link) => {
-                    const button = link.querySelector(".sticky-menuButton");
-                    if (button) {
-                        button.classList.remove("active");
-                    }
-                });
+                // Prevent immediate override by temporarily disabling highlightMenu
+                preventHighlight = true;
 
-                const activeButton = this.querySelector(".sticky-menuButton");
-                if (activeButton) {
-                    activeButton.classList.add("active");
-                }
-
-                // Wait for scroll animation to finish before updating active button (for accuracy)
+                // Wait for scroll animation to finish, then apply the same logic used in scrolling
                 setTimeout(() => {
-                    highlightMenu();
-                }, 500);
+                    preventHighlight = false;
+                    highlightMenu(); // Re-run the highlight logic used during scrolling
+                }, 700); // Adjust delay as needed
             }
         });
     });
