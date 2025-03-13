@@ -189,6 +189,7 @@
         align-items: stretch;
 	flex-direction: column;
 	gap: 24px;
+	padding: 44px 0;
 }
     
 /* Content */
