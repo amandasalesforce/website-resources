@@ -45,7 +45,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
         sections.forEach((section) => {
             const rect = section.getBoundingClientRect();
-            const offset = isSticky ? 270 : 20; // Adjust activation offset dynamically
+            const offset = isSticky ? 272 : 600; // Adjust activation offset dynamically
             const sectionTop = rect.top + window.scrollY - offset; 
             const sectionBottom = sectionTop + section.offsetHeight;
 
