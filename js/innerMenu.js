@@ -42,7 +42,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
         sections.forEach((section) => {
             const rect = section.getBoundingClientRect();
-            const offset = isSticky ? 250 : 0; // Adjust when sticky
+            const offset = isSticky ? 270 : 20; // Increased offset slightly to delay activation
             const sectionTop = rect.top + window.scrollY - offset; 
             const sectionBottom = sectionTop + section.offsetHeight;
 
@@ -80,7 +80,7 @@ document.addEventListener("DOMContentLoaded", function () {
             
             if (targetSection) {
                 const isSticky = document.querySelector(".sticky-menuWrapper").classList.contains("sticky");
-                const offset = isSticky ? 250 : 0; // Match the logic used for scroll detection
+                const offset = isSticky ? 270 : 20; // Match the updated logic used for scroll detection
 
                 const targetPosition = targetSection.getBoundingClientRect().top + window.scrollY - offset;
 
