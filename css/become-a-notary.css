@@ -960,6 +960,15 @@
 	.comparison-table-html-3 .lwc-1nf8r8ii43j.cb-outputRichText-container { height: 700px; }
 
      /* Table Title */
+	.chart-title-wrapper {
+	    display: flex;
+	    flex-direction: column;
+	    align-items: center;
+	    justify-content: center;
+	    padding: 20px;
+	    margin: 20px auto;
+	}
+	
 	h1.chart-title {
 		font-size: 40px;
 		text-align: center;
@@ -972,6 +981,8 @@
 		text-align: center;
 		padding: 12px 0px;
 	}
+
+	
 
      /* Container */
 	.comparison-container,
@@ -1171,7 +1182,10 @@
 		.comparison-table-html-3 .lwc-1nf8r8ii43j.cb-outputRichText-container { height: 693px; }
 		
 	     /* Container */
-		.comparison-container {
+		.comparison-container,
+		.comparison-container-one,
+		.comparison-container-two,
+		.comparison-container-three {
 			width: 826px;
 		}
      
@@ -1321,7 +1335,10 @@
 		.comparison-table-html-3 .lwc-1nf8r8ii43j.cb-outputRichText-container { height: 688px; }
 
 		
-	    	.comparison-container {
+	    	.comparison-container,
+		.comparison-container-one,
+		.comparison-container-two,
+		.comparison-container-three {
 		        width: 695px;
 		        margin: 0 auto;
 		        display: flex;
