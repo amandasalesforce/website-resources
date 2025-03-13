@@ -74,7 +74,7 @@ document.addEventListener("DOMContentLoaded", function () {
             const targetSection = document.getElementById(targetId);
             
             if (targetSection) {
-                const targetPosition = targetSection.offsetTop - 85; // Adjusted to prevent overscrolling
+                const targetPosition = targetSection.offsetTop - 50; // Adjusted offset to 50px for better alignment
                 
                 window.scrollTo({
                     top: targetPosition,
