@@ -960,6 +960,13 @@
 	.comparison-table-html-3 .lwc-1nf8r8ii43j.cb-outputRichText-container { height: 700px; }
 
      /* Table Title */
+	h1.chart-title {
+		font-size: 40px;
+		text-align: center;
+		padding: 12px 0px;
+		margin: 24px auto;
+	}
+
 	h3.chart-title {
 		font-size: 24px;
 		text-align: center;
@@ -975,11 +982,8 @@
 		width: 1056px;
 		margin: auto;
 		font-family: Xfinity Standard;
+		padding:
 	}
-
-	.comparison-container-one { height: 775px; }
-	.comparison-container-two { height: 585px; }
-	.comparison-container-three { height: 700px; }
 
 /* ----- Layer 1: Row Layer ----- */
 	.row-layer {
