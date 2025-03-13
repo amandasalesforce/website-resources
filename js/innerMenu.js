@@ -13,14 +13,17 @@ document.addEventListener("DOMContentLoaded", function () {
     placeholder.style.height = menu.offsetHeight + "px"; 
 
     let preventHighlight = false; // Added flag
+    let isSticky = false; // Track if menu is sticky
 
     function checkSticky() {
         const scrollOffset = window.scrollY || document.documentElement.scrollTop;
+        const stickyThreshold = 700;
 
-        if (scrollOffset >= menu.offsetTop + 700) { // Adjusted trigger position
+        if (scrollOffset >= stickyThreshold) { 
             if (!menu.classList.contains("sticky")) {
                 menu.classList.add("sticky");
                 menu.parentNode.insertBefore(placeholder, menu);
+                isSticky = true;
             }
         } else {
             if (menu.classList.contains("sticky")) {
@@ -28,8 +31,10 @@ document.addEventListener("DOMContentLoaded", function () {
                 if (placeholder.parentNode) {
                     placeholder.parentNode.removeChild(placeholder);
                 }
+                isSticky = false;
             }
         }
+        highlightMenu(); // Ensure section highlighting runs regardless of sticky state
     }
 
     function highlightMenu() {
@@ -37,12 +42,10 @@ document.addEventListener("DOMContentLoaded", function () {
 
         let scrollPosition = window.scrollY || document.documentElement.scrollTop;
         let activeSection = null;
-        
-        const isSticky = document.querySelector(".sticky-menuWrapper").classList.contains("sticky");
 
         sections.forEach((section) => {
             const rect = section.getBoundingClientRect();
-            const offset = isSticky ? 270 : 20; // Increased offset slightly to delay activation
+            const offset = isSticky ? 270 : 20; // Adjust activation offset dynamically
             const sectionTop = rect.top + window.scrollY - offset; 
             const sectionBottom = sectionTop + section.offsetHeight;
 
@@ -79,7 +82,6 @@ document.addEventListener("DOMContentLoaded", function () {
             const targetSection = document.getElementById(targetId);
             
             if (targetSection) {
-                const isSticky = document.querySelector(".sticky-menuWrapper").classList.contains("sticky");
                 const offset = isSticky ? 270 : 20; // Match the updated logic used for scroll detection
 
                 const targetPosition = targetSection.getBoundingClientRect().top + window.scrollY - offset;
@@ -102,8 +104,8 @@ document.addEventListener("DOMContentLoaded", function () {
     });
 
     window.addEventListener("scroll", function () {
-        checkSticky();
-        highlightMenu();
+        checkSticky(); // Ensure sticky menu logic runs first
+        highlightMenu(); // Ensure section highlighting always runs
     });
 
     highlightMenu(); // Run once on page load in case user refreshes in the middle of the page
