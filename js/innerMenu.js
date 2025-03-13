@@ -94,12 +94,11 @@ document.addEventListener("DOMContentLoaded", function () {
                 // Prevent immediate override by temporarily disabling highlightMenu
                 preventHighlight = true;
 
-                // Wait for scroll animation to finish, then apply the same logic used in scrolling
+                // Wait for the scroll animation to finish, then apply the same logic used in scrolling
                 setTimeout(() => {
                     preventHighlight = false;
-                    highlightMenu(); // Re-run the highlight logic used during scrolling
-                    window.dispatchEvent(new Event("scroll"));
-                }, 700); // Adjust delay as needed
+                    highlightMenu(); // Directly call highlightMenu instead of dispatching a scroll event
+                }, 700); // Adjust delay to match scroll duration
             }
         });
     });
