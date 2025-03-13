@@ -74,7 +74,7 @@ document.addEventListener("DOMContentLoaded", function () {
             const targetSection = document.getElementById(targetId);
             
             if (targetSection) {
-                const bannerHeight = document.querySelector(".banner-section")?.offsetHeight || 0; // Get banner height
+                const bannerHeight = document.querySelector(".banner-section")?.offsetHeight || 500; // Default to 500px if not found
                 const adjustedOffset = 50 + bannerHeight; // Adjusted to include banner
                 
                 const targetPosition = targetSection.offsetTop - adjustedOffset; 
