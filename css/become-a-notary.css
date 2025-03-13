@@ -972,19 +972,23 @@
 	h1.chart-title {
 		font-size: 40px;
 		text-align: center;
-		padding: 12px 0px;
-		margin: 24px auto;
+		font-weight: 500;
 	}
 
 	h3.chart-title {
 		font-size: 24px;
 		text-align: center;
 		padding: 12px 0px;
+		font-weight: 500;
 	}
 
 	
 
      /* Container */
+	.comparison-container-wrapper {
+    		padding-bottom: 30px;
+	}
+
 	.comparison-container,
 	.comparison-container-one,
 	.comparison-container-two,
@@ -993,7 +997,6 @@
 		width: 1056px;
 		margin: auto;
 		font-family: Xfinity Standard;
-		padding:
 	}
 
 /* ----- Layer 1: Row Layer ----- */
@@ -1007,7 +1010,7 @@
 	
 	.table-one.row-layer { grid-template-rows: 90px 1fr 1fr 1fr 1fr 1fr 1fr 1fr; }
 	.table-two.row-layer { grid-template-rows: 90px 1fr 1fr 1fr 1fr; }
-	.table-three.row-layer { grid-template-rows: 90px 1fr 1fr 1fr 1fr 185px; }
+	.table-three.row-layer { grid-template-rows: 90px 1fr 1fr 1fr 1fr 195px; }
 
      /* Row 1 */
 	.row-header {
