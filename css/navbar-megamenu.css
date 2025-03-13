@@ -263,7 +263,7 @@ transition: transform 0.2s ease-in-out;
 
 .dropdown-icon_Green {
     color: #30856d;
-    background-color: #e9f7ee;
+    background-color: #eaf7f6;
 }
 
 .dropdown-icon_Purple {
@@ -314,7 +314,7 @@ transition: transform 0.2s ease-in-out;
 }
 
 .dropdown-greenBox {
-    background-color: #e9f7ee;  
+    background-color: #eaf7f6;  
 }
 
 .dropdown-purpleBox {
@@ -377,7 +377,7 @@ transition: transform 0.2s ease-in-out;
 
 /* Header Row Styling */
 .non-link-wrapper {
-    background-color: #cbead9;
+    background-color: #b9ddd8;
     font-weight: bold;
     text-align: center;
     padding: 8px;
@@ -385,7 +385,7 @@ transition: transform 0.2s ease-in-out;
 }
 
 .dropdown-greenBox .link-wrapper:hover {
-    background-color: #cbead9;
+    background-color: #b9ddd8;
 }
 
 .dropdown-purpleBox .link-wrapper:hover {
