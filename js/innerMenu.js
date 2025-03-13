@@ -74,10 +74,7 @@ document.addEventListener("DOMContentLoaded", function () {
             const targetSection = document.getElementById(targetId);
             
             if (targetSection) {
-                const bannerHeight = 500; // Fixed offset since .banner-section is not present
-                const adjustedOffset = 50 + bannerHeight; // Adjusted to include banner
-                
-                const targetPosition = targetSection.offsetTop - adjustedOffset; 
+                const targetPosition = targetSection.offsetTop; // Align section with top of viewport
                 
                 window.scrollTo({
                     top: targetPosition,
