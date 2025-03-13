@@ -75,11 +75,8 @@ document.addEventListener("DOMContentLoaded", function () {
             const targetSection = document.getElementById(targetId);
             
             if (targetSection) {
-                const isSticky = document.querySelector(".sticky-menuWrapper").classList.contains("sticky");
-                const offset = isSticky ? 250 : 0; // Ensure proper offset when scrolling
-                
-                const targetPosition = targetSection.offsetTop - offset;
-                
+                const targetPosition = targetSection.offsetTop; // Align section exactly at the top
+
                 window.scrollTo({
                     top: targetPosition,
                     behavior: "smooth"
