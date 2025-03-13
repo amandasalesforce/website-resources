@@ -36,7 +36,7 @@ document.addEventListener("DOMContentLoaded", function () {
         let activeSection = null;
 
         sections.forEach((section) => {
-            const sectionTop = section.getBoundingClientRect().top + window.scrollY;
+            const sectionTop = section.getBoundingClientRect().top + window.scrollY - 15; // Move activation 15px earlier
             const sectionBottom = sectionTop + section.offsetHeight;
 
             // Ensure the section is at least 50% visible before activating
