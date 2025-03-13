@@ -139,6 +139,7 @@
     	padding-right: 0;
     	padding-left: 0;
 	overflow: clip;
+    margin-top: 64px;
 }
 
 /* 2nd Inner Column General Attributes */
