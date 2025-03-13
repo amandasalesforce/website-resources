@@ -74,7 +74,10 @@ document.addEventListener("DOMContentLoaded", function () {
             const targetSection = document.getElementById(targetId);
             
             if (targetSection) {
-                const targetPosition = targetSection.offsetTop - 50; // Adjusted offset to 50px for better alignment
+                const bannerHeight = document.querySelector(".banner-section")?.offsetHeight || 0; // Get banner height
+                const adjustedOffset = 50 + bannerHeight; // Adjusted to include banner
+                
+                const targetPosition = targetSection.offsetTop - adjustedOffset; 
                 
                 window.scrollTo({
                     top: targetPosition,
