@@ -32,15 +32,13 @@ document.addEventListener("DOMContentLoaded", function () {
 
     function highlightMenu() {
         let scrollPosition = window.scrollY || document.documentElement.scrollTop;
-        let viewportHeight = window.innerHeight;
         let activeSection = null;
 
         sections.forEach((section) => {
-            const sectionTop = section.getBoundingClientRect().top + window.scrollY - 15; // Move activation 15px earlier
+            const sectionTop = section.offsetTop - 150; // Adjust for sticky menu height
             const sectionBottom = sectionTop + section.offsetHeight;
 
-            // Ensure the section is at least 50% visible before activating
-            if (scrollPosition + viewportHeight * 0.5 >= sectionTop && scrollPosition < sectionBottom) {
+            if (scrollPosition >= sectionTop && scrollPosition < sectionBottom) {
                 activeSection = section.id;
             }
         });
@@ -65,24 +63,6 @@ document.addEventListener("DOMContentLoaded", function () {
             }
         }
     }
-
-    menuLinks.forEach((link) => {
-        link.addEventListener("click", function (event) {
-            event.preventDefault();
-            
-            const targetId = this.getAttribute("href").substring(1);
-            const targetSection = document.getElementById(targetId);
-            
-            if (targetSection) {
-                const targetPosition = targetSection.offsetTop; // Align section with top of viewport
-                
-                window.scrollTo({
-                    top: targetPosition,
-                    behavior: "smooth"
-                });
-            }
-        });
-    });
 
     window.addEventListener("scroll", function () {
         checkSticky();
