@@ -32,13 +32,15 @@ document.addEventListener("DOMContentLoaded", function () {
 
     function highlightMenu() {
         let scrollPosition = window.scrollY || document.documentElement.scrollTop;
+        let viewportHeight = window.innerHeight;
         let activeSection = null;
 
         sections.forEach((section) => {
-            const sectionTop = section.offsetTop - 150; // Adjust for sticky menu height
+            const sectionTop = section.getBoundingClientRect().top + window.scrollY;
             const sectionBottom = sectionTop + section.offsetHeight;
 
-            if (scrollPosition >= sectionTop && scrollPosition < sectionBottom) {
+            // Ensure the section is at least 50% visible before activating
+            if (scrollPosition + viewportHeight * 0.5 >= sectionTop && scrollPosition < sectionBottom) {
                 activeSection = section.id;
             }
         });
