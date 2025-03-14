@@ -474,3 +474,157 @@
 .ContentSection_blue-purple-gradientBackground {
         background: linear-gradient(124deg, #c1f0ff 0%, #efdbf0 50%, #c8b5fa 100%);
 }
+
+/* ----------------PACKAGE CARDS ----------------*/
+
+.package-container-body {
+        font-family: Xfinity Standard, sans-serif;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        background: #e0e5ec;
+        margin: 0;
+        flex-direction: column;
+      }
+
+.package-container-body h2 {
+	color: #333;
+	margin-bottom: 20px;
+	font-weight: 400;
+	font-size: 34px;
+}
+
+/* Container for pricing cards */
+.pricing-container {
+	display: flex;
+	gap: 50px;
+	padding: 20px;
+}
+
+/* Individual Pricing Cards */
+.pricing-card {
+	background: #e0e5ec;
+	padding: 40px;
+	width: 260px;
+	border-radius: 50px;
+	box-shadow: 8px 8px 16px #babecc, -8px -8px 16px #ffffff;
+	text-align: center;
+	position: relative;
+	overflow: hidden;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.pricing-card h3 {
+	font-size: 30px;
+	color: #000000;
+	margin-bottom: 10px;
+	position: relative;
+	font-weight: 300;
+	width: 100%;
+}
+
+.pricing-card h3::after {
+	content: "";
+	display: block;
+	margin: 8px auto 0;
+	width: 80%;
+	height: 6px;
+	border-radius: 10px;
+}
+
+.pricing-card h3#essential::after {
+	background: #217c7c;
+}
+
+.pricing-card h3#enhanced::after {
+	background: #0bb6aa;
+}
+
+.pricing-card h3#ultimate::after {
+	background: #285df1;
+}
+
+.pricing-card p.price {
+	font-size: 40px;
+	font-weight: 300;
+	color: #000000;
+	margin: 20px 0;
+}
+
+.feature-list-wrapper {
+	list-style: none;
+	padding: 0;
+	margin: 15px 0;
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	justify-content: flex-start;
+	width: fit-content;
+	gap: 20px;
+}
+
+.feature-list-features {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+}
+
+#essential-feature-list-check {
+	color: #217c7c;
+	padding-right: 10px;
+}
+
+#enhanced-feature-list-check {
+	color: #0bb6aa;
+	padding-right: 10px;
+}
+
+#ultimate-feature-list-check {
+	color: #285df1;
+	padding-right: 10px;
+}
+
+#feature-list-xmark {
+	color: rgb(243, 94, 94);
+	padding-right: 11.25px;
+	padding-left: 1.25px;
+}
+
+.feature-list-text {
+	font-size: 14px;
+	margin: 0;
+}
+
+.strikeout {
+	color: rgb(178, 175, 175);
+	text-decoration: line-through;
+}
+
+.pricing-card .btn {
+	display: inline-block;
+	margin-top: 15px;
+	padding: 10px 20px;
+	background: #217c7c;
+	color: white;
+	border-radius: 25px;
+	text-decoration: none;
+	font-weight: bold;
+	box-shadow: 6px 6px 12px #babecc, -6px -6px 12px #ffffff;
+	transition: all 0.3s ease-in-out;
+}
+
+.pricing-card .btn:hover {
+	background: #217c7c;
+	box-shadow: inset 0px 0px 0px #babecc, inset 0px 0px 0px #ffffff;
+}
+
+/* Responsive Design */
+@media (max-width: 900px) {
+	.pricing-container {
+	  flex-direction: column;
+	  align-items: center;
+	}
+}
