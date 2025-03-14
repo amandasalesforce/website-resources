@@ -263,7 +263,7 @@ transition: transform 0.2s ease-in-out;
 
 .dropdown-icon_Green {
     color: #217c7c;
-    background-color: #eaf7f6;
+    background-color: #d7ebe1;
 }
 
 .dropdown-icon_Purple {
@@ -314,7 +314,7 @@ transition: transform 0.2s ease-in-out;
 }
 
 .dropdown-greenBox {
-    background-color: #eaf7f6;  
+    background-color: #d7ebe1;  
 }
 
 .dropdown-purpleBox {
@@ -385,7 +385,7 @@ transition: transform 0.2s ease-in-out;
 }
 
 .dropdown-greenBox .link-wrapper:hover {
-    background-color: #b9ddd8;
+    background-color: #aecfbf;
 }
 
 .dropdown-purpleBox .link-wrapper:hover {
