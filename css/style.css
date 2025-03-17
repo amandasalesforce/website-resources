@@ -483,6 +483,7 @@
 }
 
  /* ---------- Package Flow Background ---------- */
-dxp_flow-flow.component-wrapper-spacer.traditional-package-flow flowruntime-lwc-body {
-    background: #e5e8ee;
-}
+
+dxp_flow-flow.traditional-package-flow flowruntime-lwc-body {
+	background: #e5e8ee; 
+} 
