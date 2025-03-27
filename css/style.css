@@ -37,6 +37,11 @@
     	align-items: center;
     	justify-content: center;
 }
+
+a.HeroSection_button.Button_pillButton.Button_arrowButton {
+    text-decoration: none;
+    color: #fff;
+}
     
 /* Hero Button Hover */
 .HeroSection_button.Button_arrowButton:hover {
