@@ -60,7 +60,6 @@
         display: -ms-flexbox;
         display: flex;
         gap: 0px;
-        height: 355px;
         border: none;
         margin-left: 0px;
         margin-right: 0px;
@@ -73,10 +72,18 @@
         flex-direction: column;
     }
 
+.services_imageWrapper img {
+    object-fit: cover;
+    align-items: flex-end;
+    height: 325px;
+    object-position: center;
+    border-radius: 20px;
+}
+
     .services_arrowWrapper {
         width: 44px;
         font-size: 24px;
-        position: relative;
+        position: absolute;
         z-index: 2;
         display: flex;
         gap: 0px;
@@ -98,6 +105,8 @@
         transition: color 0.3s, transform 0.3s;
         color: rgb(13, 18, 28);
         transform: rotate(-45deg);
+	right: 30px;
+    	bottom: 30px;
     }
 
     .services_contentWrapper {
