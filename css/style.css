@@ -513,13 +513,13 @@ dxp_flow-flow.traditional-package-flow flowruntime-lwc-body {
 }
 
 .my-account_payment .addPaymentMethodHeader {
-    display: none;
+    display: none!important;
 }
 
 .account-content-card .slds-card,
 .account-content-card .slds-box.address-card-style-class {
-    border-radius: 10px;
-    border-color: rgb(230 230 230);
+    border-radius: 10px!important;
+    border-color: rgb(230 230 230)!important;
 }
 
 .account-content-card .dxp-text-heading-medium {
@@ -527,29 +527,29 @@ dxp_flow-flow.traditional-package-flow flowruntime-lwc-body {
 }
 
 .address-footer-style {
-    width: 100%;
-    display: flex;
-    justify-content: flex-end;
+    width: 100%!important;
+    display: flex!important;
+    justify-content: flex-end!important;
 }
 
 button.slds-button.address-footer-button-style {
     text-decoration-line: none !important;
-    background: white;
-    border-radius: 5px;
-    padding: 5px 10px;
-    border: 1px solid grey;
-    font-size: 12px;
+    background: white!important;
+    border-radius: 5px!important;
+    padding: 5px 10px!important;
+    border: 1px solid grey!important;
+    font-size: 12px!important;
 }
 
 /* Account Tabs */
 .account-content-card ul.slds-tabs_default__nav {
-    width: fit-content;
+    width: 292px;
     height: 40px;
     padding: 4px;
     background: #F8F8F8;
     overflow: hidden;
     border-radius: 8px;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
     gap: 4px;
     display: inline-flex;
@@ -558,7 +558,7 @@ button.slds-button.address-footer-button-style {
 
 .account-content-area .slds-tabs_default__item.slds-is-active,
 .account-content-card .slds-tabs_default__item {
-    width: 140px;
+    min-width: 140px;
     height: 100%;
     padding-top: 4px;
     padding-bottom: 4px;
@@ -594,9 +594,10 @@ button.slds-button.address-footer-button-style {
     display: inline-flex;
 }
 
-.account-content-area a.slds-tabs_default__link:hover {
+.account-content-area .slds-tabs_default__item .slds-tabs_default__link:hover,
+.account-content-area .slds-tabs_default__item.slds-is-active .slds-tabs_default__link:hover {
     text-decoration: none;
-    color: white;
+    color: white !important;
 }
 
 .account-content-card a.slds-tabs_default__link {
@@ -605,9 +606,4 @@ button.slds-button.address-footer-button-style {
 
 .account-content-card .slds-tabs_default__item.slds-is-active a.slds-tabs_default__link {
     color: #217c7c !important;
-}
-
-.slds-tabs_default__item.slds-tabs_default__overflow-button {
-	width: 0px;
-	padding: 0px;
 }
