@@ -556,18 +556,23 @@ button.slds-button.address-footer-button-style {
     border-bottom: none;
 }
 
-.account-content-area .slds-tabs_default__item.slds-is-active {
-    width: 100%;
+.account-content-area .slds-tabs_default__item.slds-is-active,
+.account-content-card .slds-tabs_default__item {
+    width: 140px;
     height: 100%;
     padding-top: 4px;
     padding-bottom: 4px;
-    background: white;
+    background: unset;
     box-shadow: 0px 16px 8px -4px rgba(27, 46, 94, 0.03);
     border-radius: 8px;
     justify-content: center;
     align-items: center;
     gap: 8px;
     display: inline-flex;
+}
+
+.account-content-area .slds-tabs_default__item.slds-is-active {
+    background: white!important;
 }
 
 .account-content-area .slds-tabs_default__item.slds-is-active:after,
@@ -600,4 +605,9 @@ button.slds-button.address-footer-button-style {
 
 .account-content-card .slds-tabs_default__item.slds-is-active a.slds-tabs_default__link {
     color: #217c7c !important;
+}
+
+.slds-tabs_default__item.slds-tabs_default__overflow-button {
+	width: 0px;
+	padding: 0px;
 }
