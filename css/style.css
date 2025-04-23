@@ -416,6 +416,10 @@ a.HeroSection_button.Button_pillButton.Button_arrowButton {
 .has-border-radius {
         border-radius: 24px;
 }
+
+card-has-border-radius {
+	border-radius: 10px;
+}
     
 .med-y-padding {
         padding-top: 64px;
@@ -493,4 +497,33 @@ dxp_flow-flow.traditional-package-flow flowruntime-lwc-body {
 	background: #9ab4b2;
 	border-radius: 24px;
 	padding: 64px 0;
-} 
+}
+
+/* ======================================================================== */
+/* -------------------------- MY ACCOUNT PAGES ---------------------------- */
+/* ======================================================================== */
+
+/* ---------- Left Column - Navigation ---------- */
+aside.navigation.slds-border_right {
+    border-right: none !important;
+    width: 30%;
+}
+
+.myAccount_navContainer {
+    border-radius: 24px !important;
+    background: #c9dcd9;
+    margin-left: auto;
+    margin-top: 50px;
+    width: 45%;
+    display: flex;
+}
+
+/* ---------- Right Column - Content ---------- */
+.myAccount_contentContainer {
+    margin-top: 58px;
+    background: #c9dcd9;
+    border-radius: 24px;
+    width: 85%;
+    margin-right: auto;
+    height: 100vh;
+}
