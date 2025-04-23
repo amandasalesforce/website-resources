@@ -416,10 +416,6 @@ a.HeroSection_button.Button_pillButton.Button_arrowButton {
 .has-border-radius {
         border-radius: 24px;
 }
-
-card-has-border-radius {
-	border-radius: 10px;
-}
     
 .med-y-padding {
         padding-top: 64px;
@@ -503,27 +499,105 @@ dxp_flow-flow.traditional-package-flow flowruntime-lwc-body {
 /* -------------------------- MY ACCOUNT PAGES ---------------------------- */
 /* ======================================================================== */
 
-/* ---------- Left Column - Navigation ---------- */
-aside.navigation.slds-border_right {
-    border-right: none !important;
-    width: 30%;
+.account-content-title h3 {
+    color: #404D61;
+    font-family: 'DM Sans';
+    font-weight: 600;
+    line-height: 40px;
+    word-wrap: break-word;
+    font-size: 27px;
 }
 
-.myAccount_navContainer {
-    border-radius: 24px !important;
-    background: #c9dcd9;
-    margin-left: auto;
-    margin-top: 50px;
-    width: 45%;
+.account-content-card .slds-truncate {
+    font-family: 'DM Sans';
+}
+
+.my-account_payment .addPaymentMethodHeader {
+    display: none;
+}
+
+.account-content-card .slds-card,
+.account-content-card .slds-box.address-card-style-class {
+    border-radius: 10px;
+    border-color: rgb(230 230 230);
+}
+
+.account-content-card .dxp-text-heading-medium {
+    font-family: 'DM Sans';
+}
+
+.address-footer-style {
+    width: 100%;
     display: flex;
+    justify-content: flex-end;
 }
 
-/* ---------- Right Column - Content ---------- */
-.myAccount_contentContainer {
-    margin-top: 58px;
-    background: #c9dcd9;
-    border-radius: 24px;
-    width: 85%;
-    margin-right: auto;
-    height: 100vh;
+button.slds-button.address-footer-button-style {
+    text-decoration-line: none !important;
+    background: white;
+    border-radius: 5px;
+    padding: 5px 10px;
+    border: 1px solid grey;
+    font-size: 12px;
+}
+
+/* Account Tabs */
+.account-content-card ul.slds-tabs_default__nav {
+    width: fit-content;
+    height: 40px;
+    padding: 4px;
+    background: #F8F8F8;
+    overflow: hidden;
+    border-radius: 8px;
+    justify-content: center;
+    align-items: center;
+    gap: 4px;
+    display: inline-flex;
+    border-bottom: none;
+}
+
+.account-content-area .slds-tabs_default__item.slds-is-active {
+    width: 100%;
+    height: 100%;
+    padding-top: 4px;
+    padding-bottom: 4px;
+    background: white;
+    box-shadow: 0px 16px 8px -4px rgba(27, 46, 94, 0.03);
+    border-radius: 8px;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    display: inline-flex;
+}
+
+.account-content-area .slds-tabs_default__item.slds-is-active:after,
+.account-content-area .slds-tabs_default__item:hover:after{
+    display: none;
+}
+
+.account-content-area .slds-tabs_default .slds-tabs_default__item:hover {
+    width: 100%;
+    height: 100%;
+    padding-top: 4px;
+    padding-bottom: 4px;
+    background: #217c7c;
+    box-shadow: 0px 16px 8px -4px rgba(27, 46, 94, 0.03);
+    border-radius: 8px;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    display: inline-flex;
+}
+
+.account-content-area a.slds-tabs_default__link:hover {
+    text-decoration: none;
+    color: white;
+}
+
+.account-content-card a.slds-tabs_default__link {
+    color: #1c1c1c !important;
+}
+
+.account-content-card .slds-tabs_default__item.slds-is-active a.slds-tabs_default__link {
+    color: #217c7c !important;
 }
