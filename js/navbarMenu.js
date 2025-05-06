@@ -45,12 +45,9 @@ function initializeDropdowns() {
     });
 }
 
-// Run once on DOMContentLoaded
+// Attach to DOM load + page show events (SPA safe)
 document.addEventListener("DOMContentLoaded", initializeDropdowns);
-
-// Run again after LWR soft page loads (like redirects or SPA transitions)
-document.addEventListener("load", initializeDropdowns);
 window.addEventListener("pageshow", initializeDropdowns);
 
-// Optionally expose for manual use
+// Optionally expose for LWC to call manually
 window.initializeDropdowns = initializeDropdowns;
