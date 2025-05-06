@@ -3,9 +3,8 @@ function initializeDropdowns() {
     const dropdownMenus = document.querySelectorAll(".dropdown-menu");
 
     dropdownToggles.forEach((toggle, index) => {
-        const menu = toggle.nextElementSibling; // The corresponding dropdown menu
-        const arrow = menu?.querySelector(".dropdown-arrow"); // The dropdown arrow inside the menu
-
+        const menu = toggle.nextElementSibling;
+        const arrow = menu?.querySelector(".dropdown-arrow");
         if (!menu || !arrow) return;
 
         function showDropdown() {
@@ -32,26 +31,26 @@ function initializeDropdowns() {
         toggle.addEventListener("mouseenter", showDropdown);
         menu.addEventListener("mouseenter", showDropdown);
 
-        toggle.addEventListener("mouseleave", function () {
+        toggle.addEventListener("mouseleave", () => {
             setTimeout(() => {
-                if (!toggle.matches(":hover") && !menu.matches(":hover")) {
-                    hideDropdown();
-                }
+                if (!toggle.matches(":hover") && !menu.matches(":hover")) hideDropdown();
             }, 200);
         });
 
-        menu.addEventListener("mouseleave", function () {
+        menu.addEventListener("mouseleave", () => {
             setTimeout(() => {
-                if (!toggle.matches(":hover") && !menu.matches(":hover")) {
-                    hideDropdown();
-                }
+                if (!toggle.matches(":hover") && !menu.matches(":hover")) hideDropdown();
             }, 200);
         });
     });
 }
 
-// Call once on initial page load
+// Run once on DOMContentLoaded
 document.addEventListener("DOMContentLoaded", initializeDropdowns);
 
-// Optionally expose globally if you need to call it again later
+// Run again after LWR soft page loads (like redirects or SPA transitions)
+document.addEventListener("load", initializeDropdowns);
+window.addEventListener("pageshow", initializeDropdowns);
+
+// Optionally expose for manual use
 window.initializeDropdowns = initializeDropdowns;
