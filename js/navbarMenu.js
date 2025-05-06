@@ -1,31 +1,26 @@
-// Navbar Dropdown Menu
-document.addEventListener("DOMContentLoaded", function () {
+function initializeDropdowns() {
     const dropdownToggles = document.querySelectorAll(".dropdown-toggle");
     const dropdownMenus = document.querySelectorAll(".dropdown-menu");
 
     dropdownToggles.forEach((toggle, index) => {
         const menu = toggle.nextElementSibling; // The corresponding dropdown menu
-        const arrow = menu.querySelector(".dropdown-arrow"); // The dropdown arrow inside the menu
+        const arrow = menu?.querySelector(".dropdown-arrow"); // The dropdown arrow inside the menu
 
-        if (!menu || !arrow) return; // Ensure elements exist
+        if (!menu || !arrow) return;
 
         function showDropdown() {
             toggle.classList.add("dropdown-active");
             menu.classList.add("visible");
 
-            // Move the second dropdown slightly left if it's the second one
             if (index === 1) {
                 menu.classList.add("dropdown-second");
             } else {
                 menu.classList.remove("dropdown-second");
             }
 
-            // Calculate arrow position relative to menu
             const toggleRect = toggle.getBoundingClientRect();
             const menuRect = menu.getBoundingClientRect();
             const arrowPosition = ((toggleRect.left + toggleRect.width / 2) - menuRect.left) + "px";
-
-            // Apply arrow positioning
             arrow.style.setProperty("--arrow-position", arrowPosition);
         }
 
@@ -53,4 +48,10 @@ document.addEventListener("DOMContentLoaded", function () {
             }, 200);
         });
     });
-});
+}
+
+// Call once on initial page load
+document.addEventListener("DOMContentLoaded", initializeDropdowns);
+
+// Optionally expose globally if you need to call it again later
+window.initializeDropdowns = initializeDropdowns;
