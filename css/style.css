@@ -483,6 +483,10 @@ a.HeroSection_button.Button_pillButton.Button_arrowButton {
 	background-color: #9ab4b2;
 }
 
+.ContentSection_greenTwoBackground {
+        background-color: #e9f1f1;
+}
+
 .ContentSection_blue-purple-gradientBackground {
         background: linear-gradient(124deg, #c1f0ff 0%, #efdbf0 50%, #c8b5fa 100%);
 }
