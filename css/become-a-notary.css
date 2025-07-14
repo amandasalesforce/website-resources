@@ -946,11 +946,6 @@
         background-color: #90dfa2;
     }
 
-    details[open] summary.lwc-4r1413ceuog {
-        background-color: #a2ffb7;
-        transition: background-color 0.3s ease-in-out;
-    }
-
     hr.lwc-hpv24absc3 {
         height: 0px !important;
     }
