@@ -436,7 +436,7 @@ a.HeroSection_button.Button_pillButton.Button_arrowButton {
 }
 
 .has-top-margin {
-	margin-top: -100px;
+	margin-top: -180px;
 }
 
 .has-auto-margin {
@@ -497,6 +497,10 @@ a.HeroSection_button.Button_pillButton.Button_arrowButton {
 
 .ContentSection_blue-purple-gradientBackground {
         background: linear-gradient(124deg, #c1f0ff 0%, #efdbf0 50%, #c8b5fa 100%);
+}
+
+.ContentSection_whiteOpaqueBackground {
+	background: #b9c5c3c9;
 }
 
  /* ---------- Package Flow Background ---------- */
