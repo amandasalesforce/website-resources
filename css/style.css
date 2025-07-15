@@ -435,6 +435,14 @@ a.HeroSection_button.Button_pillButton.Button_arrowButton {
         margin: 0 auto;
 }
 
+.has-top-margin {
+	margin-top: 50px;
+}
+
+.has-auto-margin {
+	margin: 0 auto;
+}
+
 .tableHeader h5 {
 	font-weight: 500!important;
 }
