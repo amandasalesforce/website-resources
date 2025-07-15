@@ -437,6 +437,7 @@ a.HeroSection_button.Button_pillButton.Button_arrowButton {
 
 .has-top-margin {
 	margin-top: -180px;
+	z-index: 3;
 }
 
 .has-auto-margin {
