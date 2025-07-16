@@ -493,6 +493,10 @@ a.HeroSection_button.Button_pillButton.Button_arrowButton {
 	background-color: #9ab4b2;
 }
 
+.ContentSection_lightGreyBackground {
+	background-color: #e3ebeb;
+}
+
 .ContentSection_greenTwoBackground {
         background-color: #e9f1f1;
 }
