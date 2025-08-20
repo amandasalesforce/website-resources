@@ -3,15 +3,13 @@
 /* ======================================================================== */
 
 
-
-
 .banner-image-become {
-        background-image: url('https://notarypublicassociation.lightning.force.com/cms/media/MCLONXS2ZGPBBOVF2CRH37NPZJ6U?version=3.1');
-        background-size: contain; /* Adjusts image to cover the entire container */
-        background-position: center right; /* Centers the image */
-        background-repeat: no-repeat; /* Prevents the image from repeating */
+	background-image: url('https://notarypublicassociation.lightning.force.com/cms/media/MCLONXS2ZGPBBOVF2CRH37NPZJ6U?version=3.1');
+	background-size: contain; /* Adjusts image to cover the entire container */
+	background-position: center right; /* Centers the image */
+	background-repeat: no-repeat; /* Prevents the image from repeating */
 	margin-top: 20px;
-    	margin-bottom: 20px;
+	margin-bottom: 20px;
 }
 
 /* ------------- Sticky Menu ------------- */
@@ -31,22 +29,22 @@
 }
 
 #sticky-menuLink {
-    	text-decoration: none !important;
+	text-decoration: none !important;
 }
 
 .sticky-menuButton {
-    	display: block;
-    	background: #fff;
-    	padding: 10px 12px;
-    	border-radius: 8px;
-    	color: #333;
-		width: 120px;
-		text-align: center;
-		font-size: 14px;
-		font-weight: 500;
-    	height: 35px;
-    	align-content: center;
-    	box-sizing: content-box;
+	display: block;
+	background: #fff;
+	padding: 10px 12px;
+	border-radius: 8px;
+	color: #333;
+	width: 120px;
+	text-align: center;
+	font-size: 14px;
+	font-weight: 500;
+	height: 35px;
+	align-content: center;
+	box-sizing: content-box;
 }
 
 .sticky-menuButton:hover {
@@ -73,10 +71,10 @@
 }
 
 .divider {
-        background-color: #e3e8ef;
-        width: 1px;
-        height: 16px;
-        margin: auto 21px auto 21px;
+	background-color: #e3e8ef;
+	width: 1px;
+	height: 16px;
+	margin: auto 21px auto 21px;
 }
 
 /* ------------- Requirements Box ------------- */
@@ -118,31 +116,32 @@
 
 .banner-image-traditional {
 	background-image: url('https://notarypublicassociation.lightning.force.com/cms/media/MCIWAB35HR7VFLXPLK2WMT227FK4?version=1.1');
-        background-size: contain; /* Adjusts image to cover the entire container */
-        background-position: bottom; /* Centers the image */
-        background-repeat: no-repeat; /* Prevents the image from repeating */
+	background-size: contain; /* Adjusts image to cover the entire container */
+	background-position: bottom; /* Centers the image */
+	background-repeat: no-repeat; /* Prevents the image from repeating */
 	margin-bottom: -20px!important;
 }
     
 /* Hero Section Pill */
 
 .HeroSection_pillWrapper {
-        margin-bottom: 10px;
+	margin-bottom: 10px;
+	margin-top: 40px;
 }
 
 .banner-section-pill {
-        background-color: white;
-        font-weight: 500;
-        line-height: 1;
-        padding: 8px 12px;
-        align-items: center;
-        justify-content: center;
-        border-radius: 64px;
-        display: flex;
-        gap: 8px;
-        font-size: 18px;
-        flex: 0;
-        width: fit-content;
+	background-color: white;
+	font-weight: 500;
+	line-height: 1;
+	padding: 8px 12px;
+	align-items: center;
+	justify-content: center;
+	border-radius: 64px;
+	display: flex;
+	gap: 8px;
+	font-size: 18px;
+	flex: 0;
+	width: fit-content;
 }
 
 .themePill {
@@ -160,11 +159,11 @@
 }
 
 .banner-section-pill-icon {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        flex-shrink: 0;
-        font-size: 18px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-shrink: 0;
+	font-size: 18px;
 }
 
 .banner-section-pill-icon i.fa-solid {
@@ -172,11 +171,11 @@
 }
 
 .banner-section-pill-text {
-        display: flex;
-        flex-direction: column;
-        align-items: flex-start;
-        gap: .25rem;
-        font-size: 18px;
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	gap: .25rem;
+	font-size: 18px;
 	font-weight: 400;
 	color: #217c7c;
 }
@@ -212,7 +211,7 @@
 	background-image: url(https://notarypublicassociation.lightning.force.com/notary/sfsites/c/cms/delivery/media/MCSQ7GXZPRT5HNREC3C5L7PSAJKQ?version=1.1&channelId=0apPP00000005Kf);
 	background-size: cover;
 	background-position: center;
-        background-repeat: no-repeat;
+	background-repeat: no-repeat;
 }
 
 .ContentSection_contentImage img {
@@ -222,151 +221,151 @@
 }
     
 /* ------------- Traditional - Packages Table ------------- */
-    .gradient-column {
-        background: linear-gradient(to bottom, #B2E190, #E0F89E); /* Vertical gradient */
-        height: 100%; /* Ensure the column is fully covered */
-        min-width: 100%; /* Optional: Ensure full width if necessary */
-        padding: 0px; /* Optional: Add padding inside the column */
-    }
+.gradient-column {
+	background: linear-gradient(to bottom, #B2E190, #E0F89E); /* Vertical gradient */
+	height: 100%; /* Ensure the column is fully covered */
+	min-width: 100%; /* Optional: Ensure full width if necessary */
+	padding: 0px; /* Optional: Add padding inside the column */
+}
 
-    /* Table Container */
-    .table-container {
-        display: flex;
-        background-color: white;
-        border-radius: 10px;
-        overflow: hidden;
-        box-shadow: 0 0px 25px rgba(0, 0, 0, 0.1);
-        width: 100%;
-    }
+/* Table Container */
+.table-container {
+	display: flex;
+	background-color: white;
+	border-radius: 10px;
+	overflow: hidden;
+	box-shadow: 0 0px 25px rgba(0, 0, 0, 0.1);
+	width: 100%;
+}
 
-    /* Table Styling */
-    .comparison-table {
-        width: 100%;
-        border-collapse: collapse;
-        text-align: center;
-    }
+/* Table Styling */
+.comparison-table {
+	width: 100%;
+	border-collapse: collapse;
+	text-align: center;
+}
 
-    /* Table Header */
-    .table-header th {
-        font-size: 18px;
-        font-weight: bold;
-        padding: 15px;
-        text-align: center;
-    }
+/* Table Header */
+.table-header th {
+	font-size: 18px;
+	font-weight: bold;
+	padding: 15px;
+	text-align: center;
+}
 
-    .empty-header {
-        background: white;
-        text-align: left;
-    }
+.empty-header {
+	background: white;
+	text-align: left;
+}
 
-    .package {
-        font-weight: bold;
-        text-align: center;
-    }
+.package {
+	font-weight: bold;
+	text-align: center;
+}
 
-    .price {
-        font-size: 16px;
-        display: block;
-        color: #333;
-        text-align: center;
-    }
+.price {
+	font-size: 16px;
+	display: block;
+	color: #333;
+	text-align: center;
+}
 
-    th.package.package-essential {
-        color: #217c7c;
-    }
+th.package.package-essential {
+	color: #217c7c;
+}
 
-    th.package.package-enhanced {
-        color: #009E96;
-    }
+th.package.package-enhanced {
+	color: #009E96;
+}
 
-    th.package.package-ultimate {
-        color: #3754A5;
-    }
+th.package.package-ultimate {
+	color: #3754A5;
+}
 
-    /* Row Styling */
-    .table-body .table-row td {
-        padding: 15px;
-        border-top: 1px solid #eee;
-        border-bottom: 1px solid #eee;
-        border-left: 1px solid #eee;
-    }
+/* Row Styling */
+.table-body .table-row td {
+	padding: 15px;
+	border-top: 1px solid #eee;
+	border-bottom: 1px solid #eee;
+	border-left: 1px solid #eee;
+}
 
-    /* Feature Column */
-    .feature-name {
-        text-align: left;
-        font-weight: bold;
-        border-left: 0px !important;
-    }
+/* Feature Column */
+.feature-name {
+	text-align: left;
+	font-weight: bold;
+	border-left: 0px !important;
+}
 
 
-    td.check.check-essential,
-    td.check.check-enhanced,
-    td.check.check-ultimate {
-        text-align: center;
-    }
+td.check.check-essential,
+td.check.check-enhanced,
+td.check.check-ultimate {
+	text-align: center;
+}
 
-    i.fa-solid.fa-circle-xmark {
-        color: #f8164f;
-    }
+i.fa-solid.fa-circle-xmark {
+	color: #f8164f;
+}
 
-    i.fa-solid.fa-circle-check.essential {
-        color: #217c7c;
-    }
+i.fa-solid.fa-circle-check.essential {
+	color: #217c7c;
+}
 
-    i.fa-solid.fa-circle-check.enhanced {
-        color: #009E96;
-    }
+i.fa-solid.fa-circle-check.enhanced {
+	color: #009E96;
+}
 
-    i.fa-solid.fa-circle-check.ultimate {
-        color: #3754A5;
-    }
+i.fa-solid.fa-circle-check.ultimate {
+	color: #3754A5;
+}
 
-    .fas,
-    .fa-solid {
-        font-weight: 900;
-        font-size: 1.5rem;
-    }
+.fas,
+.fa-solid {
+	font-weight: 900;
+	font-size: 1.5rem;
+}
 
-    /* Last Row (Merged) */
-    .get-started-cell {
-        text-align: center;
-        border: 0px !important;
-        padding: 0px !important;
-    }
+/* Last Row (Merged) */
+.get-started-cell {
+	text-align: center;
+	border: 0px !important;
+	padding: 0px !important;
+}
 
-    .get-started-button {
-        background-color: #1e5bff !important;
-        color: #ffffff !important;
-        padding: 12px 20px;
-        font-size: 16px;
-        cursor: pointer;
-        text-decoration: none;
-        display: inline-block;
-        width: 100%;
-        height: 50px;
-    }
+.get-started-button {
+	background-color: #1e5bff !important;
+	color: #ffffff !important;
+	padding: 12px 20px;
+	font-size: 16px;
+	cursor: pointer;
+	text-decoration: none;
+	display: inline-block;
+	width: 100%;
+	height: 50px;
+}
 
 /* ------------- Traditional - FAQ ------------- */
-    .traditional-faq-container {
-        background-color: #90dfa2;
-    }
+.traditional-faq-container {
+	background-color: #90dfa2;
+}
 
-    hr.lwc-hpv24absc3 {
-        height: 0px !important;
-    }
+hr.lwc-hpv24absc3 {
+	height: 0px !important;
+}
 
-    webruntime-component-container.lwc-6dnmjs1s9oi.component-wrapper-spacer.lwc-4k1qbp7cls1-host {
-        margin-bottom: 0px !important;
-    }
+webruntime-component-container.lwc-6dnmjs1s9oi.component-wrapper-spacer.lwc-4k1qbp7cls1-host {
+	margin-bottom: 0px !important;
+}
 
-    .lwc-4r1413ceuog.title {
-        padding-top: 5px;
-        padding-bottom: 5px;
-    }
+.lwc-4r1413ceuog.title {
+	padding-top: 5px;
+	padding-bottom: 5px;
+}
 
-    .lwc-79drvfleods-host {
-        justify-items: center;
-    }   
+.lwc-79drvfleods-host {
+	justify-items: center;
+}   
 /* ----------------------------------------------------- */
 /* ============ Commission Comparison Table ============ */
 /* ----------------------------------------------------- */
