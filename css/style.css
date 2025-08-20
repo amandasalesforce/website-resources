@@ -177,8 +177,10 @@ a.HeroSection_button.Button_pillButton.Button_arrowButton {
 	.TableSection_sectionMedium {
 		max-width: 100%;
         }
-	
-}
+
+	.HeroSection_content {
+		padding: 25px 0;
+	}
     
 @media (max-width: 768px) {
     	.HeroSection_sectionSmall {
@@ -188,6 +190,10 @@ a.HeroSection_button.Button_pillButton.Button_arrowButton {
 	.TableSection_sectionSmall {
 		max-width: 100%;
         }
+
+	.HeroSection_content {
+		padding: 25px 0;
+	}
 }
     
 .HeroSection_container {
