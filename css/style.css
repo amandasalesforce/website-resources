@@ -120,8 +120,6 @@ a.HeroSection_button.Button_pillButton.Button_arrowButton {
         100% {
             	transform: translateY(0);
         }
-
-        /* Moves back down */
 }    
 
 /* ======================================================================== */
@@ -131,25 +129,25 @@ a.HeroSection_button.Button_pillButton.Button_arrowButton {
 /* ------------- HERO SECTION ------------- */
 /* Section Container */
 .Section_section {
-        width:100%;
-        padding-left: 24px;
-        padding-right: 24px;
+	width:100%;
+	padding-left: 24px;
+	padding-right: 24px;
 }
     
 /* 1st Inner Column General Attributes */
 .HeroSection_sectionBackground {
-    	width: 100%; /* Makes it full width */
-        position: relative;
-        padding-right: 5%;
-        padding-left: 5%;
-        overflow: clip;
+	width: 100%; /* Makes it full width */
+	position: relative;
+	padding-right: 5%;
+	padding-left: 5%;
+	overflow: clip;
 }
 
 .TableSection_sectionBackground {
-    	width: 100%;
-    	position: relative;
-    	padding-right: 0;
-    	padding-left: 0;
+	width: 100%;
+	position: relative;
+	padding-right: 0;
+	padding-left: 0;
 	overflow: clip;
     margin-top: 64px;
 }
@@ -181,6 +179,7 @@ a.HeroSection_button.Button_pillButton.Button_arrowButton {
 	.HeroSection_content {
 		padding: 25px 0;
 	}
+}
     
 @media (max-width: 768px) {
     	.HeroSection_sectionSmall {
