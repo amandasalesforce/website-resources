@@ -74,6 +74,12 @@
 .need-help-wrapper:hover .need-help-icon-hover {
     	opacity: 1;
 }
+
+@media (max-width: 768px) {
+	.need-help-wrapper {
+		display:none;
+	}
+}
     
 /* ------------- Back to Top Button ------------- */
 .back-to-top {
