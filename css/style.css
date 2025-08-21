@@ -261,6 +261,10 @@ a.HeroSection_button.Button_pillButton.Button_arrowButton {
     	.ContentSection_sectionSmall {
         	max-width: 480px;
         }
+	
+		.ContentSection_content {
+	        padding: 25px 0;
+		}
 }
     
 .ContentSection_container {
