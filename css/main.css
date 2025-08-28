@@ -37,10 +37,21 @@
 }
 
 /* Left Column */
+.np-hero-col {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100%;
+}
+
+.np-hero,
+.np-hero * {
+  font-family: "Asap", system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif !important;
+}
+
 .np-hero {
   max-width: 720px;
   padding: 0 8px;
-  font-family: "Asap", system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
   color: #0e1a1a;
 }
 
@@ -93,7 +104,9 @@
   box-shadow: 0 10px 24px rgba(33, 124, 124, 0.28);
 }
 
-.np-hero__cta:active { transform: translateY(1px); }
+.np-hero__cta:active {
+  transform: translateY(1px);
+}
 
 .np-hero__cta:focus-visible {
   outline: 3px solid #a7e3e3;
@@ -105,7 +118,6 @@
   .np-hero { max-width: 100%; }
   .np-hero__title { letter-spacing: 0.06em; }
 }
-
 /* ---------------- Services Section ---------------- */
     /* General Elements */
     .ContentSection_services {
