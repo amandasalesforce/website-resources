@@ -63,11 +63,12 @@ header[role="banner"],
 
 /* Right column (cart/profile/etc.) */
 .header-right {
-  display: flex;
+  display: flex !important;
   align-items: center;
   justify-content: flex-end;
   flex: 0 0 auto;
   gap: 12px;
+  flex-direction: row;
 }
 
 /* Right group children shrink to content */
