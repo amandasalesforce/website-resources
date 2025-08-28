@@ -133,6 +133,19 @@ a.HeroSection_button.Button_pillButton.Button_arrowButton {
 	padding-left: 24px;
 	padding-right: 24px;
 }
+
+.x-hero {
+  padding: 0;
+}
+
+.x-hero .layout-column:first-child {
+  padding-left: 60px;
+  padding-right: 40px;
+}
+
+.x-hero .layout-column:last-child {
+  padding: 0;
+}
     
 /* 1st Inner Column General Attributes */
 .HeroSection_sectionBackground {
