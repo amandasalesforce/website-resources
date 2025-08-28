@@ -35,7 +35,7 @@ justify-content: center;
 }
 
 .np-hero__kicker {
-  margin: 0 0 8px 0;
+  margin: 0 0 5px 0;
   font-weight: 600;
   font-size: clamp(14px, 1.6vw, 18px);
   letter-spacing: 0.18em;
@@ -49,17 +49,18 @@ justify-content: center;
   line-height: 1.12;
   font-weight: 700;
   text-transform: uppercase;
-  font-size: clamp(36px, 6vw, 68px);
+  font-size: clamp(36px, 6vw, 58px);
   letter-spacing: 0.2em;
   color: #217c7c;
 }
 
 .np-hero__desc {
-  margin: 0 0 36px 0;
+  margin: 0 0 60px 0;
   font-weight: 400;
-  font-size: clamp(16px, 1.9vw, 22px);
+  font-size: clamp(16px, 1.9vw, 18px);
   line-height: 1.5;
   color: #64748b;
+  width: 60%;
 }
 
 .np-hero__cta {
@@ -69,6 +70,7 @@ justify-content: center;
   padding: 16px 28px;
   border-radius: 999px;
   background: #009E96;
+  border: 1px solid #009E96;
   color: #fff;
   text-decoration: none;
   font-weight: 700;
