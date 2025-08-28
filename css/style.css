@@ -125,15 +125,8 @@ a.HeroSection_button.Button_pillButton.Button_arrowButton {
 /* ======================================================================== */
 /* ------------------------------- SECTIONS ------------------------------- */
 /* ======================================================================== */
-    
-/* ------------- HERO SECTION ------------- */
-/* Section Container */
-.Section_section {
-	width:100%;
-	padding-left: 24px;
-	padding-right: 24px;
-}
 
+/* ------------- HOME PAGE HERO SECTION ------------- */
 .x-hero {
   padding: 0;
 }
@@ -145,6 +138,20 @@ a.HeroSection_button.Button_pillButton.Button_arrowButton {
 
 .x-hero .layout-column:last-child {
   padding: 0;
+}
+
+.x-hero .hero-image img {
+  width: 100%;
+  max-width: 720px;
+  height: auto;
+}
+
+/* ------------- HERO SECTION ------------- */
+/* Section Container */
+.Section_section {
+	width:100%;
+	padding-left: 24px;
+	padding-right: 24px;
 }
     
 /* 1st Inner Column General Attributes */
