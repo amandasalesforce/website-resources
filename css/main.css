@@ -4,49 +4,35 @@
 
 /* ---------------- Hero Banner ---------------- */
 .x-hero {
-  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 40px;
+  padding: 0 60px;
+  position: relative;
 }
 
-.x-hero .layout-column:first-child {
-  padding-left: 60px;
-  padding-right: 40px;
-}
-
-.x-hero .layout-column:last-child {
-  padding: 0;
-}
-
-.x-hero .hero-image img {
-  width: 100%;
-  max-width: 740px;
-  height: auto;
-}
-
-/* Tablet */
-@media (max-width: 1199px) and (min-width: 768px) {
-  .x-hero .hero-image img {
-    max-width: 560px;
-  }
-}
-
-/* Mobile */
-@media (max-width: 767px) {
-  .x-hero .hero-image img {
-    max-width: 100%;
-  }
-}
-
-/* Left Column */
+/* Left Column (text) */
 .np-hero-col {
+  flex: 1;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  height: 100%;
-  margin-right: -40px;
   z-index: 2;
   position: relative;
 }
 
+/* Right Column (background image) */
+.np-hero-photo {
+  flex: 1;
+  min-height: clamp(520px, 60vh, 720px);
+  background-image: url("/notary/sfsites/c/cms/delivery/media/MCYC6STX7HINFU5FTQI4SS3HUFNQ?channelId=0apPP00000005Kf");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: right center;
+}
+
+/* Text Styles */
 .np-hero,
 .np-hero * {
   font-family: "Asap", system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif !important;
@@ -117,10 +103,28 @@
   border-radius: 999px;
 }
 
+/* Responsive */
+@media (max-width: 992px) {
+  .x-hero {
+    flex-direction: column;
+    text-align: center;
+    padding: 20px;
+  }
+
+  .np-hero-photo {
+    width: 100%;
+    min-height: 320px;
+    background-size: cover;
+    background-position: center;
+  }
+}
+
 @media (max-width: 480px) {
   .np-hero { max-width: 100%; }
   .np-hero__title { letter-spacing: 0.06em; }
 }
+
+
 /* ---------------- Services Section ---------------- */
     /* General Elements */
     .ContentSection_services {
