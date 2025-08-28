@@ -1,18 +1,31 @@
-document.addEventListener("DOMContentLoaded", function () {
-    const header = document.querySelector(".lwc-4g1q55crn48.header"); // Adjust this selector to match your header
+(function () {
+  'use strict';
 
+  document.addEventListener('DOMContentLoaded', function () {
+    // The sticky header wrapper you added in Builder
+    const header = document.querySelector('.header-bar');
     if (!header) {
-        console.warn("Site header not found. Skipping box shadow script.");
-        return;
+      console.warn('[headerShadow] .header-bar not found');
+      return;
     }
 
-    function applyHeaderShadow() {
-        if (window.scrollY > 10) {
-            header.classList.add("scrolled"); // Add shadow when scrolled
-        } else {
-            header.classList.remove("scrolled"); // Remove shadow when at the top
-        }
-    }
+    // Pixels scrolled before shadow appears
+    const THRESHOLD = 8;
 
-    window.addEventListener("scroll", applyHeaderShadow);
-});
+    // Apply the correct state (on load, on scroll, on resize/orientation)
+    const apply = () => {
+      const y = window.scrollY || window.pageYOffset || 0;
+      header.classList.toggle('header-is-scrolled', y > THRESHOLD);
+    };
+
+    // Initial state (covers page loads with anchor offsets, etc.)
+    apply();
+
+    // Scroll listener (passive for perf)
+    window.addEventListener('scroll', apply, { passive: true });
+
+    // Re-evaluate on resize/orientation changes
+    window.addEventListener('resize', apply, { passive: true });
+    window.addEventListener('orientationchange', apply, { passive: true });
+  });
+})();
