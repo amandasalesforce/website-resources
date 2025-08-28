@@ -1,74 +1,85 @@
-/* ===== Header: container ===== */
+/* ===== Header Container ===== */
 .header-bar {
-  position: sticky;
-  top: 0;
-  z-index: 9999;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  height: 90px;
   width: 100%;
-  background: #fff;               /* prevents see-through “shadow” look at top */
-  transition: box-shadow .25s ease, background-color .25s ease;
+  height: 90px;
+  position: sticky;
+  top: 0;
+  z-index: 9999;
+  background: #fff;
+  transition: background-color .3s ease, box-shadow .3s ease;
 }
 
-/* optional: constrain total width on very large screens */
-.header-bar.header-max {
-  max-width: 1440px;
-  margin-inline: auto;
-  padding-inline: 20px;           /* matches Builder’s default gutters */
+/* Scroll shadow: toggled by JS on the header-bar element */
+.header-bar.header-is-scrolled {
+  box-shadow: 0 4px 20px rgba(0,0,0,.08);
 }
 
-/* Sections */
-.header-left,
-.header-center,
+header[role="banner"],
+.dxp-header,
+.slds-global-header_container {
+  box-shadow: none !important;
+  border-bottom: none !important;
+}
+
+/* ===== Columns ===== */
+
+/* Left column (logo) */
+.header-left {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex: 1;
+  min-width: 0;
+}
+
+.header-logo {
+  display: flex;
+  align-items: center;
+}
+.header-logo img {
+  height: 70px;
+  width: auto;
+  max-width: 100%;
+  min-width: 120px;
+  object-fit: contain;
+  object-position: left;
+}
+
+/* Center column (mega menu) */
+.header-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex: 2;
+  text-align: center;
+  min-width: 420px;
+}
+
+/* Right column (cart/profile/etc.) */
 .header-right {
   display: flex;
   align-items: center;
-  min-width: 0;                   /* allow truncation instead of wrapping */
+  justify-content: flex-end;
+  flex: 1;
+  gap: 15px;
+  min-width: 0;
 }
 
-/* Let nav breathe and be centered */
-.header-left   { flex: 0 0 auto; }
-.header-center { flex: 1 1 auto;  justify-content: center; }
-.header-right  { flex: 0 0 auto;  gap: 16px; }   /* tighter, consistent spacing */
-
-/* Logo */
-.header-logo img,
-.header-left img {
-  height: 70px;
-  width: auto;
-  display: block;
-}
-
-/* Divider in right group (use small HTML component with the class below) */
+/* Divider in right group */
 .header-bar-divider {
-  width: 1px; height: 16px;
-  background: #e3e8ef;
-  margin-inline: 6px;
+  background-color: #e3e8ef;
+  width: 1px;
+  height: 16px;
+  margin: 0 24px 0 12px;
 }
 
-/* Cart */
-.cart-icon            { display:flex; align-items:center; }
-
-/* Shadow only after scroll (class applied by JS below) */
-.header-bar.scrolled {
-  box-shadow: 0 4px 12px rgba(16, 24, 40, .12);
-}
-
-/* ---------- Responsive tweaks ---------- */
+/* ===== Responsive ===== */
 @media (max-width: 1200px) {
-  .header-center { justify-content: flex-start; }
+  .header-center { min-width: 420px; }
 }
 @media (max-width: 992px) {
-  .header-center { display: none; }       /* hide full nav; rely on mobile menu */
-  .header-right  { margin-left: auto; }   /* keep right items aligned right */
-}
-
-/* ===== Responsive niceties ===== */
-@media (max-width: 1200px) {
-  .header-nav { min-width: 420px; }
-}
-@media (max-width: 992px) {
-  .header-nav { min-width: 0; }
+  .header-center { min-width: 0; }
 }
