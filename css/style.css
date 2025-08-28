@@ -142,8 +142,22 @@ a.HeroSection_button.Button_pillButton.Button_arrowButton {
 
 .x-hero .hero-image img {
   width: 100%;
-  max-width: 720px;
+  max-width: 740px;
   height: auto;
+}
+
+/* Tablet */
+@media (max-width: 1199px) and (min-width: 768px) {
+  .x-hero .hero-image img {
+    max-width: 560px;
+  }
+}
+
+/* Mobile */
+@media (max-width: 767px) {
+  .x-hero .hero-image img {
+    max-width: 100%;
+  }
 }
 
 /* ------------- HERO SECTION ------------- */
