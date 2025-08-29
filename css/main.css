@@ -3,37 +3,57 @@
 /* ======================================================================== */
 
 /* ---------------- Hero Banner ---------------- */
-.x-hero {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-justify-content: center;
-  padding: 0;
-}
-
-/* Left Column (text) */
-.np-hero-col {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  height: 100%;
-  padding: 60px 40px 60px 60px;
-  z-index: 2;
+.hero {
   position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  min-height: clamp(560px, 68vh, 760px);
+  width: 100%;
+  overflow: hidden;
 }
 
-
-.np-hero,
-.np-hero * {
-  font-family: "Asap", system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif !important;
+/* Background */
+.hero__bg {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
 }
 
-.np-hero {
+.hero__bg img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; 
+  object-position: right center;
+}
+
+/* Subtle gradient overlay for text contrast */
+.hero::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  background: linear-gradient(90deg,
+    rgba(255,255,255,.95) 0%,
+    rgba(255,255,255,.80) 24%,
+    rgba(255,255,255,.35) 52%,
+    rgba(255,255,255,0) 68%);
+  z-index: 1;
+}
+
+/* Text container */
+.hero__inner {
+  position: relative;
+  z-index: 2;
   max-width: 720px;
-  padding: 0 8px;
+  padding: clamp(24px, 5vw, 72px);
+  margin-left: clamp(12px, 5vw, 72px);
   color: #0e1a1a;
 }
 
+/* Typography */
 .np-hero__kicker {
   margin: 0 0 5px 0;
   font-weight: 600;
@@ -60,9 +80,10 @@ justify-content: center;
   font-size: clamp(16px, 1.9vw, 18px);
   line-height: 1.5;
   color: #64748b;
-  width: 60%;
+  max-width: 60ch;
 }
 
+/* CTA */
 .np-hero__cta {
   display: inline-flex;
   align-items: center;
@@ -76,63 +97,38 @@ justify-content: center;
   font-weight: 700;
   font-size: clamp(14px, 1.6vw, 18px);
   letter-spacing: 0.04em;
-  box-shadow: 0 6px 18px rgba(33, 124, 124, 0.22);
+  box-shadow: 0 6px 18px rgba(33,124,124,0.22);
   transition: transform .08s ease, box-shadow .2s ease, background .2s ease;
 }
 
-.np-hero__cta:hover {
-  background: #1b6a6a;
-  box-shadow: 0 10px 24px rgba(33, 124, 124, 0.28);
-}
-
-.np-hero__cta:active {
-  transform: translateY(1px);
-}
-
+.np-hero__cta:hover { background: #1b6a6a; box-shadow: 0 10px 24px rgba(33,124,124,0.28); }
+.np-hero__cta:active { transform: translateY(1px); }
 .np-hero__cta:focus-visible {
   outline: 3px solid #a7e3e3;
   outline-offset: 3px;
   border-radius: 999px;
 }
 
-/* Right Column (photo) */
-.np-hero-photo {
-  flex: 1;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding: 0;
+/* -------- Responsive tweaks -------- */
+@media (max-width: 1024px) {
+  .hero__bg img { object-position: 70% center; }
 }
 
-.np-hero-photo picture,
-.np-hero-photo img {
-  display: block;
-  width: 100%;
-  height: auto;
-  max-width: 740px;
-}
-
-/* Tablet */
-@media (max-width: 1199px) and (min-width: 768px) {
-  .np-hero-photo img {
-    max-width: 560px;
-  }
-}
-
-/* Mobile */
 @media (max-width: 767px) {
-  .np-hero-col {
-    padding: 20px;
+  .hero { min-height: 560px; }
+  .hero__bg img { object-position: 65% bottom; }
+  .hero::before {
+    background: linear-gradient(180deg,
+      rgba(255,255,255,.96) 0%,
+      rgba(255,255,255,.86) 28%,
+      rgba(255,255,255,.40) 58%,
+      rgba(255,255,255,0) 82%);
   }
-  .np-hero-photo img {
-    max-width: 100%;
+  .hero__inner {
+    margin-left: clamp(12px, 4vw, 32px);
+    padding: clamp(20px, 5vw, 40px);
   }
-  .np-hero {
-    max-width: 100%;
-  }
-  .np-hero__title {
-    letter-spacing: 0.06em;
-  }
+  .np-hero__title { letter-spacing: .06em; }
 }
 
 
