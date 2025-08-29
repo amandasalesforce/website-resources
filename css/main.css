@@ -53,6 +53,10 @@
   color: #0e1a1a;
 }
 
+.hero__inner,
+.hero__inner * {
+  font-family: "Asap", system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif !important;
+}
 /* Typography */
 .np-hero__kicker {
   margin: 0 0 5px 0;
