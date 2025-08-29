@@ -13,19 +13,18 @@
   overflow: hidden;
 }
 
-/* Background */
-.hero__bg {
+/* Background (from <picture class="hero-bg">) */
+.hero-bg {
   position: absolute;
   inset: 0;
   width: 100%;
   height: 100%;
   z-index: 0;
 }
-
-.hero__bg img {
+.hero-bg img {
   width: 100%;
   height: 100%;
-  object-fit: cover; 
+  object-fit: cover;           /* fill the area */
   object-position: right center;
 }
 
@@ -44,7 +43,7 @@
 }
 
 /* Text container */
-.hero__inner {
+.np-hero {
   position: relative;
   z-index: 2;
   max-width: 720px;
@@ -53,10 +52,12 @@
   color: #0e1a1a;
 }
 
-.hero__inner,
-.hero__inner * {
+/* Ensure Asap everywhere inside np-hero */
+.np-hero,
+.np-hero * {
   font-family: "Asap", system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif !important;
 }
+
 /* Typography */
 .np-hero__kicker {
   margin: 0 0 5px 0;
@@ -104,7 +105,6 @@
   box-shadow: 0 6px 18px rgba(33,124,124,0.22);
   transition: transform .08s ease, box-shadow .2s ease, background .2s ease;
 }
-
 .np-hero__cta:hover { background: #1b6a6a; box-shadow: 0 10px 24px rgba(33,124,124,0.28); }
 .np-hero__cta:active { transform: translateY(1px); }
 .np-hero__cta:focus-visible {
@@ -115,12 +115,12 @@
 
 /* -------- Responsive tweaks -------- */
 @media (max-width: 1024px) {
-  .hero__bg img { object-position: 70% center; }
+  .hero-bg img { object-position: 70% center; }
 }
 
 @media (max-width: 767px) {
   .hero { min-height: 560px; }
-  .hero__bg img { object-position: 65% bottom; }
+  .hero-bg img { object-position: 65% bottom; }
   .hero::before {
     background: linear-gradient(180deg,
       rgba(255,255,255,.96) 0%,
@@ -128,9 +128,10 @@
       rgba(255,255,255,.40) 58%,
       rgba(255,255,255,0) 82%);
   }
-  .hero__inner {
+  .np-hero {
     margin-left: clamp(12px, 4vw, 32px);
     padding: clamp(20px, 5vw, 40px);
+    max-width: 100%;
   }
   .np-hero__title { letter-spacing: .06em; }
 }
