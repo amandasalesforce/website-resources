@@ -22,17 +22,6 @@ justify-content: center;
   position: relative;
 }
 
-.np-hero-col::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: -80px;
-  width: 120%;
-  height: 100%;
-  background: linear-gradient(135deg, #f0fdfd 0%, #ffffff 80%);
-  clip-path: polygon(0 0, 80% 0, 70% 100%, 0 100%);
-  z-index: -1;
-}
 
 .np-hero,
 .np-hero * {
