@@ -28,7 +28,7 @@
   height: 100%;
   object-fit: contain;         /* show entire image */
   object-position: center;     /* keep it centered */
-  background: #f8fafc;         /* fill the empty space behind */
+  background: #fff;         /* fill the empty space behind */
 }
 
 /* Subtle gradient overlay for text contrast */
