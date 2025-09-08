@@ -8,7 +8,7 @@
   display: flex;
   align-items: center;
   justify-content: flex-start;
-  min-height: clamp(560px, 68vh, 760px);
+  min-height: clamp(560px, 75vh, 760px);
   width: 100%;
   overflow: hidden;
   background: #f8fafc; /* fallback background color for gaps */
