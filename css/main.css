@@ -11,6 +11,7 @@
   min-height: clamp(560px, 68vh, 760px);
   width: 100%;
   overflow: hidden;
+  background: #f8fafc; /* fallback background color for gaps */
 }
 
 /* Background (from <picture class="hero-bg">) */
@@ -21,11 +22,13 @@
   height: 100%;
   z-index: 0;
 }
+
 .hero-bg img {
   width: 100%;
   height: 100%;
-  object-fit: cover;           /* fill the area */
-  object-position: right center;
+  object-fit: contain;         /* show entire image */
+  object-position: center;     /* keep it centered */
+  background: #f8fafc;         /* fill the empty space behind */
 }
 
 /* Subtle gradient overlay for text contrast */
@@ -52,7 +55,7 @@
   color: #0e1a1a;
 }
 
-/* Ensure Asap everywhere inside np-hero */
+/* Typography */
 .np-hero,
 .np-hero * {
   font-family: "Asap", system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif !important;
