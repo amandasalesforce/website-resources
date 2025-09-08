@@ -6,12 +6,12 @@
 .hero {
   position: relative;
   display: flex;
-  align-items: center;
+  align-items: flex-end;
   justify-content: flex-start;
   min-height: clamp(560px, 75vh, 760px);
   width: 100%;
   overflow: hidden;
-  background: #f8fafc; /* fallback background color for gaps */
+  background: #fff; /* fallback background color for gaps */
 }
 
 /* Background (from <picture class="hero-bg">) */
