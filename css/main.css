@@ -96,7 +96,7 @@
   background: #009E96!important;
   border: 1px solid #009E96;
   color: #fff!important;
-  text-decoration: none;
+  text-decoration: none!important;
   font-weight: 700;
   font-size: clamp(14px, 1.6vw, 16px);
   letter-spacing: 0.04em;
