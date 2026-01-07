@@ -48,6 +48,7 @@
   padding: clamp(24px, 5vw, 35px);
   margin-left: clamp(12px, 5vw, 35px);
   color: #0e1a1a;
+	background: #000;
 }
 
 /* Typography */
