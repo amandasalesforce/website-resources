@@ -1,6 +1,6 @@
 /* ---------------- Hero Section ---------------- */
 dxp_content_layout-banner.has-border-radius.lwc-72ggtnpsd1s-host .lwc-2jronin66ql.dxp-block-image-host {
-    border-radius: 24px;
+    border-radius: 24px; 
 }
 
 /* ---------------- Services Section ---------------- */
