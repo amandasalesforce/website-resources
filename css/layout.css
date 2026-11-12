@@ -125,11 +125,31 @@
       rgba(255,255,255,0) 82%);
   }
   .np-hero {
-    margin-left: clamp(12px, 4vw, 32px);
-    padding: clamp(20px, 5vw, 40px);
-    max-width: 100%;
+    box-sizing: border-box;
+    flex: 1 1 auto;
+    width: calc(100% - 24px);
+    max-width: none;
+    min-width: 0;
+    margin: 0 12px 12px;
+    padding: 24px 20px;
   }
-  .np-hero__title { letter-spacing: .06em; }
+  .np-hero__kicker {
+    font-size: 13px;
+    letter-spacing: .12em;
+  }
+  .np-hero__title {
+    font-size: clamp(26px, 8vw, 34px);
+    letter-spacing: .04em;
+    margin-bottom: 16px;
+    overflow-wrap: break-word;
+  }
+  .np-hero__desc {
+    margin-bottom: 28px;
+  }
+  .np-hero__cta {
+    display: flex;
+    width: 100%;
+  }
 }
 
 
