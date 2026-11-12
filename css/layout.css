@@ -118,6 +118,13 @@
   .hero-bg img { object-position: 70% center; }
 }
 
+/* Tablet: nudge the hero text box down */
+@media (min-width: 768px) and (max-width: 1024px) {
+  .np-hero {
+    transform: translateY(60px);
+  }
+}
+
 @media (max-width: 767px) {
   .hero { min-height: 560px; }
   .hero-bg img { object-position: 65% bottom; }
