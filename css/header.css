@@ -96,3 +96,18 @@ header[role="banner"],
 @media (max-width: 992px) {
   .header-center { min-width: 0; }
 }
+
+/* ---------- Site logo: larger on phones and tablets ---------- */
+@media (max-width: 47.9375em) {
+  .dxp-content-layout-site-logo,
+  .dxp-content-layout-site-logo img {
+    max-height: 44px !important;
+  }
+}
+
+@media (min-width: 48em) and (max-width: 64em) {
+  .dxp-content-layout-site-logo,
+  .dxp-content-layout-site-logo img {
+    max-height: 56px !important;
+  }
+}
