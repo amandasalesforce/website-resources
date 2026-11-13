@@ -88,8 +88,8 @@
   justify-content: center;
   padding: 12px 24px;
   border-radius: 999px;
-  background: #009E96!important;
-  border: 1px solid #009E96;
+  background: #217C7C !important;
+  border: 1px solid #217C7C;
   color: #fff!important;
   text-decoration: none!important;
   font-weight: 700;
@@ -99,7 +99,7 @@
   transition: transform .08s ease, box-shadow .2s ease, background .2s ease;
 }
 
-.np-hero__cta:hover { background: #1b6a6a; box-shadow: 0 10px 24px rgba(33,124,124,0.28); }
+.np-hero__cta:hover { background: #165a5a !important; box-shadow: 0 10px 24px rgba(33,124,124,0.28); }
 .np-hero__cta:active { transform: translateY(1px); }
 .np-hero__cta:focus-visible {
   outline: 3px solid #a7e3e3;
