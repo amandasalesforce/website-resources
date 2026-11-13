@@ -83,23 +83,59 @@
     
 /* ------------- Back to Top Button ------------- */
 .back-to-top {
-        position: fixed;
-        bottom: 40px; /* Adjust as needed */
-        left: 30px; /* Adjust as needed */
-        background-color: #217c7c;
-        color: #ffffff;
-        padding: 10px 15px;
-        border-radius: 50px;
-        font-size: 14px;
-        font-weight: bold;
-        text-align: center;
-        cursor: pointer;
-        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-        display: none; /* Initially hidden */
-        z-index: 1000;
-        transition: all 0.3s ease;
+  position: fixed;
+  bottom: 40px;
+  left: 30px;
+  background-color: #217c7c;
+  color: #ffffff;
+  padding: 10px 15px;
+  border-radius: 50px;
+  font-size: 14px;
+  font-weight: bold;
+  text-align: center;
+  cursor: pointer;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  display: none; /* shown by the script after scrolling */
+  z-index: 1000;
+  transition: background-color 0.3s ease, transform 0.3s ease;
 }
 
-.back-to-top:hover {
-        background-color: #005fb2; /* Darker blue on hover */
+.back-to-top:hover,
+.back-to-top:focus-visible {
+  background-color: #165a5a; /* darker teal */
+}
+
+.back-to-top:focus-visible {
+  outline: 3px solid #ffffff;
+  outline-offset: 2px;
+  box-shadow: 0 0 0 5px #217c7c;
+}
+
+/* Phones: compact round arrow in the bottom-right corner */
+@media (max-width: 47.9375em) {
+  .back-to-top {
+    left: auto;
+    right: 16px;
+    bottom: 16px;
+    width: 44px;
+    height: 44px;
+    padding: 0;
+    font-size: 0; 
+    line-height: 44px;
+    border-radius: 50%;
+    opacity: 0.9;
+  }
+
+  .back-to-top::before {
+    content: "↑";
+    font-size: 20px;
+    font-weight: bold;
+  }
+}
+
+/* Respect users who turn off animations */
+@media (prefers-reduced-motion: reduce) {
+  .back-to-top {
+    transition: none;
+  }
 }
