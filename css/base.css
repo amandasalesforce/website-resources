@@ -244,22 +244,6 @@ a.HeroSection_button.Button_pillButton.Button_arrowButton {
         max-width: 1040px;
 }
     
-@media (max-width: 1024px) {
-    	.ContentSection_sectionMedium {
-        	max-width: 800px;
-        }
-}
-    
-@media (max-width: 768px) {
-    	.ContentSection_sectionSmall {
-        	max-width: 480px;
-        }
-	
-		.ContentSection_content {
-	        padding: 25px 0;
-		}
-}
-    
 .ContentSection_container {
         display: flex;
         position: relative;
@@ -429,7 +413,23 @@ a.HeroSection_button.Button_pillButton.Button_arrowButton {
 .pt-0 {
   padding-top: 0 !important;
 }
+
+@media (max-width: 1024px) {
+    	.ContentSection_sectionMedium {
+        	max-width: 800px;
+        }
+}
     
+@media (max-width: 768px) {
+    	.ContentSection_sectionSmall {
+        	max-width: 480px;
+        }
+	
+		.ContentSection_content {
+	        padding: 25px 0;
+		}
+}
+
 /* Text Elements */
 .headingXL h1 {
         margin: 0;
