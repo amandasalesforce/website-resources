@@ -424,6 +424,11 @@ a.HeroSection_button.Button_pillButton.Button_arrowButton {
         padding-top: 64px;
         padding-bottom: 64px;
 }
+
+/* Utility: remove top padding from a section */
+.pt-0 {
+  padding-top: 0 !important;
+}
     
 /* Text Elements */
 .headingXL h1 {
