@@ -370,14 +370,15 @@ dxp_content_layout-banner.has-border-radius.lwc-72ggtnpsd1s-host .lwc-2jronin66q
         justify-content: flex-start;
     }
     
-    #features-icons {
-        color: #4762ad;
-    }
-    
-    h1.stamps-feature-title {
-        line-height: 130%;
-        font-weight: 500;
-        margin-top: 12px;
-        margin-bottom: 12px;
-        text-align: left;
-    }
+	.features-icon {
+	    color: #4762ad;
+	}
+	
+	h3.stamps-feature-title {
+	    font-size: 16px;
+	    line-height: 130%;
+	    font-weight: 500;
+	    margin-top: 12px;
+	    margin-bottom: 12px;
+	    text-align: left;
+	}
